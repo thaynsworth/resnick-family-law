@@ -15,7 +15,7 @@ window.App = {
       var aboutView = new About({
         collection: about
       });
-      $('#about-info').append(this.aboutView(model.toJSON()));
+      // $('#about-info').append(this.aboutView(model.toJSON()));
     });
 
     Backbone.history.start();
