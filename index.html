@@ -4,7 +4,6 @@
 
   <meta charset="utf-8">
   <title>Resnick Family Law</title>
-  <link rel="icon" type="image/png" href="assets/img/favicon-logo-stripes.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/lib/bootstrap.css">
   <link rel="stylesheet" href="assets/css/lib/bootstrap-theme.css">
@@ -18,6 +17,49 @@
 </head>
 <body>
 
+  <div class="wrapper">
+
+    <div class="container-fluid section-main" id="sample">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+      
+          <div id="sample-info">
+            <div class="row">
+              
+              <!-- Home Page -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid section-main" id="about">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+        
+          <div id="about-info">
+            <div class="row">
+              
+              <!-- Home Page -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/template" id="about-template">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <p><%= name %></p>
+        <p><%= address %></p>
+      </div>
+    </div> 
+  </script>
+
 
   <script src="assets/js/lib/jquery.js"></script>
   <script src="assets/js/lib/underscore.js"></script>
@@ -26,7 +68,10 @@
   <script src="assets/js/lib/lightbox.js"></script>
   <script src="assets/js/lib/classie.js"></script>
   <script src="assets/js/lib/pathLoader.js"></script>
-  <script src="assets/js/main.js"></script> 
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/models/main.js"></script>
+  <script src="assets/js/collections/about.js"></script>
+  <script src="assets/js/views/about.js"></script> 
   <script src="assets/js/router.js"></script>  
   
   <script>
