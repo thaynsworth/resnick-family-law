@@ -11,4 +11,4 @@ var data = [
 
 ];
 
-var about = new About(data);
+var aboutCollection = new About(data);

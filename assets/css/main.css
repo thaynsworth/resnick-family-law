@@ -1,4 +1,14 @@
 
 
+body {
+	background-color: lightyellow;
+}
 
+#navbar {
+	background-color: lightgreen;
+}
+
+#footer {
+	background-color: lightblue;
+}
 

@@ -13,9 +13,9 @@ window.App = {
 
     router.on('route:about', function() {
       var aboutView = new About({
-        collection: about
+        collection: aboutCollection
       });
-      // $('#about-info').append(this.aboutView(model.toJSON()));
+
     });
 
     Backbone.history.start();
