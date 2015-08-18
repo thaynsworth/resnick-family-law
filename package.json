@@ -1,0 +1,28 @@
+{
+  "name": "resnick-family-law",
+  "version": "1.0.0",
+  "description": "Resnick Family Law",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaynsworth/resnick-family-law.git"
+  },
+  "author": {
+    "name": "Tom Haynsworth",
+    "url": "http://thomashaynsworth.com",
+    "github": "http://github.com/thaynsworth"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaynsworth/resnick-family-law/issues"
+  },
+  "homepage": "https://github.com/thaynsworth/resnick-family-law"
+}
