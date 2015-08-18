@@ -1,23 +1,26 @@
 
-window.App = {
-  Models: {},
-  Collections: {},
-  Views: {},
 
-  start: function(data) {
-    var router = new App.Router();
+RESNICK.init();
 
-    router.on('route:index', function() {
-      $('#sample-info').append("index route has been called..");
-    });
+// window.App = {
+//   Models: {},
+//   Collections: {},
+//   Views: {},
 
-    router.on('route:about', function() {
-      var aboutView = new About({
-        collection: aboutCollection
-      });
+//   start: function(data) {
+//     var router = new App.Router();
 
-    });
+//     router.on('route:index', function() {
+//       $('#sample-info').append("index route has been called..");
+//     });
 
-    Backbone.history.start();
-  }
-};
+//     router.on('route:about', function() {
+//       var aboutView = new About({
+//         collection: aboutCollection
+//       });
+
+//     });
+
+//     Backbone.history.start();
+//   }
+// };
