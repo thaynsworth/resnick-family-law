@@ -117,3 +117,9 @@ RESNICK.init();
 //     Backbone.history.start();
 //   }
 // };
+
+function didItWork() {
+  console.log("yoooooo");
+};
+
+didItWork();
