@@ -118,7 +118,7 @@ RESNICK.init();
 //   }
 // };
 
-function didItWork() {
+function howAboutNow() {
   console.log("yoooooo");
 };
 

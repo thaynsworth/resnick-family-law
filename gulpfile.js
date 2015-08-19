@@ -4,6 +4,8 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var gutil = require('gulp-util');
 var babel = require('gulp-babel');
+var less = require('gulp-less');
+var cssmin = require('gulp-cssmin');
 
 var arrayJS = [
 	"assets/js/lib/modernizr.custom.js", 
@@ -21,11 +23,12 @@ var arrayJS = [
 	"assets/js/main.js"
 	];
 
-gulp.task('default', ['js', 'js:watch']);
+gulp.task('default', ['js', 'less', 'watch']);
 
-  gulp.task('js:watch', function() {
-    gulp.watch(arrayJS, ['js']);
-  });
+gulp.task('watch', function() {
+  gulp.watch(arrayJS, ['js']);
+  gulp.watch("assets/less/**/*.less", ['less']);
+});
 
 gulp.task('js', function() {
   return gulp.src(arrayJS)
@@ -36,3 +39,27 @@ gulp.task('js', function() {
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("dist")).on('error', gutil.log);
 });
+
+gulp.task('less', function(){
+	return gulp.src("assets/less/*.less")
+		.pipe(less())
+		.pipe(rename("styles.css"))
+    .pipe(gulp.dest("dist")).on('error', gutil.log)
+    .pipe(cssmin())
+    .pipe(rename("styles.min.css"))
+    .pipe(gulp.dest("dist")).on('error', gutil.log);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
