@@ -23,6 +23,17 @@
 
     	this.wrapper.child = this.indexView;
     	this.wrapper.render();
+    }, 
+
+    about() {
+      this.changeState('about');
+
+      if (this.aboutView === null) {
+        this.aboutView = new RESNICK.AboutView();
+      }
+
+      this.wrapper.child = this.aboutView;
+      this.wrapper.render();
     }	  
 
   }); 

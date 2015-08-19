@@ -24,17 +24,3 @@ RESNICK.init();
 //     Backbone.history.start();
 //   }
 // };
-
-function howAboutNow() {
-	console.log("yoooooo");
-};
-
-function checkingItAgain() {
-	console.log('heyyyy');
-};
-
-function thisLastTime() {
-	console.log('doihafoeijw');
-};
-
-didItWork();

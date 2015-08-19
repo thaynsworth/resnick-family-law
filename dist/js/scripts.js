@@ -3,9 +3,17 @@
 var RESNICK = {
 
   init: function init() {
-    var router = new RESNICK.router();
+    var router = new RESNICK.Router();
 
     Backbone.history.start();
+  },
+
+  setView: function setView(selector, template) {
+    var $selector = this.tojquery(selector);
+
+    $selector.html(template());
+
+    return this;
   },
 
   createElement: function createElement(string) {
@@ -16,6 +24,23 @@ var RESNICK = {
     element.dataset.view = string;
     $selector.remove();
     $(element).insertAfter(new RESNICK.Container().$el);
+  },
+
+  tojquery: function tojquery(element) {
+    switch (typeof element) {
+      case "object":
+        if (element instanceof jQuery) {
+          return element;
+        }
+        break;
+
+      case "string":
+        if (element.charAt(0) === '.') {
+          return $(element);
+        } else {
+          return $(document.getElementsByClassName(element));
+        }
+    }
   },
 
   navActive: function navActive(string) {
@@ -64,6 +89,26 @@ RESNICK.IndexView = Backbone.View.extend({
   }
 
 });
+RESNICK.AboutView = Backbone.View.extend({
+
+  el: '.about',
+
+  viewContainer: _.template($('#about-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
@@ -88,6 +133,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.indexView;
+    this.wrapper.render();
+  },
+
+  about: function about() {
+    this.changeState('about');
+
+    if (this.aboutView === null) {
+      this.aboutView = new RESNICK.AboutView();
+    }
+
+    this.wrapper.child = this.aboutView;
     this.wrapper.render();
   }
 
@@ -117,17 +173,3 @@ RESNICK.init();
 //     Backbone.history.start();
 //   }
 // };
-
-function howAboutNow() {
-  console.log("yoooooo");
-};
-
-function checkingItAgain() {
-  console.log('heyyyy');
-};
-
-function thisLastTime() {
-  console.log('doihafoeijw');
-};
-
-didItWork();

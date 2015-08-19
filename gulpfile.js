@@ -21,8 +21,9 @@ var arrayJSLib = [
 var arrayJS = [
 	"assets/js/RESNICK.js", 
 	"assets/js/views/wrapper.js", 
-	"assets/js/views/index.js", 
-	"assets/js/router.js", 
+	"assets/js/views/index.js",
+	"assets/js/views/about.js",
+	"assets/js/router.js",  
 	"assets/js/main.js"
 ]
 
