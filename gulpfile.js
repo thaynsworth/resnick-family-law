@@ -16,8 +16,8 @@ var arrayJSLib = [
 	"assets/js/lib/lightbox.js", 
 	"assets/js/lib/classie.js", 
 	"assets/js/lib/pathLoader.js",
-	"assets/js/lib/jassor.js",
-	"assets/js/lib/jassor.slider.js"
+	"assets/js/lib/jssor.js",
+	"assets/js/lib/jssor.slider.js"
 	];
 
 var arrayJS = [
