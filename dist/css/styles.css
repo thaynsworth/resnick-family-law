@@ -4,9 +4,28 @@ body {
 ul {
   list-style: none;
 }
-li {
-  list-style-type: none;
-  display: inline;
+.et-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.et-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1200px;
+}
+.header-main {
+  background-color: lightblue;
+}
+.header-main .header-left {
+  text-align: left;
+  padding-top: 10px;
+}
+.header-main .header-right {
+  text-align: right;
+  padding-bottom: 10px;
 }
 .navbar {
   background-color: white;
@@ -16,11 +35,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-@media (min-width: 600px) {
-  .navbar .nav-items {
-    text-align: left;
-  }
 }
 .navbar .nav-item {
   text-align: left;
