@@ -12,9 +12,16 @@
 </head>
 <body>
 
-<div class="container navbar">
+<div class="container-fluid">
+  <h1>Resnick Family Law</h1>
+</div>
+
+<div class="navbar">
     <div class="wrapper">
       <ul class="nav-items">
+        <li data-view="index" class="nav-item nav-index">
+          <p class="nav-text"><a class="nav-link" href="#">Home</a></p>
+        </li>        
         <li data-view="work" class="nav-item nav-work">
           <p class="nav-text"><a class="nav-link" href="#work">Work</a></p>
         </li>
@@ -24,54 +31,9 @@
         <li data-view="contact" class="nav-item nav-contact">
           <p class="nav-text"><a class="nav-link" href="#contact">Contact</a></p>
         </li>
-        <li data-view="index" class="nav-item nav-index">
-          <p class="nav-text"><a class="nav-link" href="#"><i class="fa fa-home"></i></a></p>
-        </li>
       </ul>
     </div>
   </div>
-    <!-- Jssor Slider Begin -->
-    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-    <div id="slider1_container" class="slider1_container">
-        <!-- Loading Screen -->
-        <div u="loading" class="loading_container">
-            <div class="loading_1">
-            </div>
-            <div class="loading_2">
-            </div>
-        </div>
-        <!-- Slides Container -->
-        <div u="slides" class="slides_container">
-            <div>
-                <img u="image" src="assets/img/resnick-sunset.jpg" />
-                <div class="header_content">
-                  Touch Swipe Slider
-                </div>
-                <div class="footer_content">
-                  Build your slider with anything, includes image, content, text, html, photo, picture
-                </div>
-            </div>
-            <div>
-                <img u="image" src="assets/img/resnick-bird.jpg" />
-                <div class="header_content">
-                  Touch Swipe Slider
-                </div>
-                <div class="footer_content">
-                  Build your slider with anything, includes image, content, text, html, photo, picture
-                </div>
-            </div>
-        </div>
-        <!-- bullet navigator container -->
-        <div u="navigator" class="jssorb21">
-            <!-- bullet navigator item prototype -->
-            <div u="prototype"></div>
-        </div>
-        <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora21l"></span>
-        <!-- Arrow Right -->
-        <span u="arrowright" class="jssora21r"></span>
-    </div>
-    <!-- Jssor Slider End -->
 
   <div id="main-container"></div>
 
@@ -82,10 +44,43 @@
   </footer>
 
   <script type="text/template" id="index-container-template">
-    <div class="container">
-      <div class="wrapper">
-        
+    <div class="wrapper">
+      <!-- Jssor Slider -->
+      <div id="slider1_container" class="slider1_container">
+        <!-- Loading Screen -->
+        <div u="loading" class="loading_container">
+          <div class="loading_1"></div>
+          <div class="loading_2"></div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" class="slides_container">
+          <div>
+            <img u="image" src="assets/img/resnick-sunset.jpg" />
+            <div class="header_content">
+              Touch Swipe Slider
+            </div>
+            <div class="footer_content">
+              Build your slider with anything, includes image, content, text, html, photo, picture
+            </div>
+          </div>
+          <div>
+            <img u="image" src="assets/img/resnick-bird.jpg" />
+            <div class="header_content">
+              Touch Swipe Slider
+            </div>
+            <div class="footer_content">
+              Build your slider with anything, includes image, content, text, html, photo, picture
+            </div>
+          </div>
+        </div>
+        <!-- Bullet/Arrow Container -->
+        <div u="navigator" class="jssorb21">
+            <div u="prototype"></div>
+        </div>
+        <span u="arrowleft" class="jssora21l"></span>
+        <span u="arrowright" class="jssora21r"></span>
       </div>
+      <!-- Jssor Slider End -->
     </div>
   </script>
 

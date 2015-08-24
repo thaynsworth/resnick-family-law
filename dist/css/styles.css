@@ -1,11 +1,51 @@
 body {
-  background-color: green;
+  background-color: lightyellow;
 }
 ul {
+  list-style: none;
+}
+li {
   list-style-type: none;
+  display: inline;
 }
 .navbar {
-  background-color: red;
+  background-color: white;
+}
+.navbar .nav-items {
+  padding: 10px 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .navbar .nav-items {
+    text-align: left;
+  }
+}
+.navbar .nav-item {
+  text-align: left;
+  display: inline-block;
+  padding: 20px 15px 30px;
+  margin: -20px -5px -30px;
+  position: relative;
+}
+.navbar .nav-link {
+  text-decoration: none;
+  color: black;
+}
+.navbar .nav-text,
+.navbar .nav-text a {
+  text-transform: uppercase;
+  line-height: 1.4em;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: black;
+}
+@media (min-width: 600px) {
+  .navbar .nav-text,
+  .navbar .nav-text a {
+    font-size: 24px;
+  }
 }
 /* jssor slider bullet navigator skin 21 css */
 /*
