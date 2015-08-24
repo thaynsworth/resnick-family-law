@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
 body {
   background-color: lightyellow;
 }
@@ -17,47 +18,68 @@ ul {
   max-width: 1200px;
 }
 .header-main {
-  background-color: lightblue;
+  background-color: #336699;
+  height: 100%;
+  color: white;
+}
+.header-main .row {
+  padding: 2em;
 }
 .header-main .header-left {
-  text-align: left;
-  padding-top: 10px;
+  text-align: center;
+  font-size: 2.75em;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+@media (min-width: 992px) {
+  .header-main .header-left {
+    text-align: left;
+    font-size: 3.5em;
+  }
 }
 .header-main .header-right {
-  text-align: right;
-  padding-bottom: 10px;
+  font-size: 1em;
+  text-align: center;
 }
-.navbar {
+@media (min-width: 992px) {
+  .header-main .header-right {
+    font-size: 1.25em;
+    text-align: right;
+  }
+}
+.th-navbar {
   background-color: white;
 }
-.navbar .nav-items {
+.th-navbar ul {
+  margin-bottom: 0;
+}
+.th-navbar .nav-items {
   padding: 10px 0 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.navbar .nav-item {
+.th-navbar .nav-item {
   text-align: left;
   display: inline-block;
   padding: 20px 15px 30px;
   margin: -20px -5px -30px;
   position: relative;
 }
-.navbar .nav-link {
+.th-navbar .nav-link {
   text-decoration: none;
   color: black;
 }
-.navbar .nav-text,
-.navbar .nav-text a {
+.th-navbar .nav-text,
+.th-navbar .nav-text a {
   text-transform: uppercase;
   line-height: 1.4em;
   margin-bottom: 0;
   font-size: 14px;
   color: black;
 }
-@media (min-width: 600px) {
-  .navbar .nav-text,
-  .navbar .nav-text a {
+@media (min-width: 768px) {
+  .th-navbar .nav-text,
+  .th-navbar .nav-text a {
     font-size: 24px;
   }
 }

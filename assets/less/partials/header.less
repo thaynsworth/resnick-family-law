@@ -1,13 +1,32 @@
 .header-main {
-	background-color: lightblue;
+	background-color: #336699;
+	height: 100%;
+	color: white;
+	// padding: 5em
+
+	.row {
+		padding: 2em;
+	}
 
 	.header-left {
-		text-align: left;
-		padding-top: 10px;
+		text-align: center;
+		font-size: 2.75em;
+		font-family: @ptsans;
+
+		@media (min-width: @md) {
+			text-align: left;
+			font-size: 3.5em;
+		}
 	}
 
 	.header-right {
-		text-align: right;
-		padding-bottom: 10px;
+		font-size: 1em;
+		text-align: center;
+
+		@media (min-width: @md) {
+			font-size: 1.25em;
+			text-align: right;
+		}
 	}
+
 }
