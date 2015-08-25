@@ -42,6 +42,7 @@ a {
 .header-main .header-right {
   font-size: 1em;
   text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 @media (min-width: 992px) {
   .header-main .header-right {

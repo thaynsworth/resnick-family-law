@@ -6,6 +6,8 @@ var gutil = require('gulp-util');
 var babel = require('gulp-babel');
 var less = require('gulp-less');
 var cssmin = require('gulp-cssmin');
+var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
 
 var arrayJSLib = [
 	"assets/js/lib/modernizr.custom.js", 
@@ -39,6 +41,15 @@ var arrayCSSLib = [
 	"assets/css/lib/normalize.css"
 ]
 
+var notifyOpts = {
+    errorHandler: function(err) {
+      gutil.beep();
+      console.log(err);
+      this.emit('end');
+      notify(err);
+    }
+  };
+
 gulp.task('default', ['css:lib', 'js:lib', 'js', 'less', 'watch']);
 
 gulp.task('watch', function() {
@@ -59,6 +70,7 @@ gulp.task('js', function() {
   return gulp.src(arrayJS)
     .pipe(concaty("scripts.js"))
     .pipe(babel())
+    .on('error', notifyOpts.errorHandler)
     .pipe(gulp.dest("dist/js"))
     .pipe(uglify()).on('error', gutil.log)
     .pipe(rename("scripts.min.js"))
@@ -68,6 +80,7 @@ gulp.task('js', function() {
 gulp.task('less', function(){
 	return gulp.src("assets/less/style.less")
 		.pipe(less())
+		.on('error', notifyOpts.errorHandler)
 		.pipe(rename("styles.css"))
     .pipe(gulp.dest("dist/css")).on('error', gutil.log)
     .pipe(cssmin())
