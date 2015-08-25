@@ -5,6 +5,9 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 .et-container {
   margin-left: auto;
   margin-right: auto;
@@ -61,9 +64,14 @@ ul {
 .th-navbar .nav-item {
   text-align: left;
   display: inline-block;
-  padding: 20px 15px 30px;
+  padding: 20px 7px 30px;
   margin: -20px -5px -30px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .th-navbar .nav-item {
+    padding: 20px 20px 30px;
+  }
 }
 .th-navbar .nav-link {
   text-decoration: none;
@@ -74,14 +82,19 @@ ul {
   text-transform: uppercase;
   line-height: 1.4em;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 12px;
   color: black;
+  padding-bottom: 2px;
 }
 @media (min-width: 768px) {
   .th-navbar .nav-text,
   .th-navbar .nav-text a {
-    font-size: 24px;
+    font-size: 20px;
   }
+}
+.nav-active a {
+  border-bottom: 2px solid black;
+  text-decoration: underline;
 }
 /* jssor slider bullet navigator skin 21 css */
 /*
