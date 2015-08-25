@@ -8,6 +8,7 @@ var less = require('gulp-less');
 var cssmin = require('gulp-cssmin');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
+var jshint = require('gulp-jshint');
 
 var arrayJSLib = [
 	"assets/js/lib/modernizr.custom.js", 
@@ -19,7 +20,8 @@ var arrayJSLib = [
 	"assets/js/lib/classie.js", 
 	"assets/js/lib/pathLoader.js",
 	"assets/js/lib/jssor.js",
-	"assets/js/lib/jssor.slider.js"
+	"assets/js/lib/jssor.slider.js",
+	"assets/js/lib/jssor2.js"
 	];
 
 var arrayJS = [
@@ -50,10 +52,24 @@ var notifyOpts = {
     }
   };
 
-gulp.task('default', ['css:lib', 'js:lib', 'js', 'less', 'watch']);
+var notifyHint = {
+    jshint: function(file) {
+      if (file.jshint.success) {
+        return false;
+      }
+      var errors = file.jshint.results.map(function(data) {
+        if (data.error) {
+          return "(" + data.error.line + ':' + data.error.character + ') ' + data.error.reason;
+        }
+      }).join("\n");
+      return file.relative + " (" + file.jshint.results.length + " errors)\n" + errors;
+    }
+  }
+
+gulp.task('default', ['css:lib', 'js:lib', 'js', 'less', 'watch', 'lint']);
 
 gulp.task('watch', function() {
-  gulp.watch(arrayJS, ['js']);
+  gulp.watch(arrayJS, ['js', 'lint']);
   gulp.watch("assets/less/**/*.less", ['less']);
 });
 
@@ -96,6 +112,13 @@ gulp.task('css:lib', function(){
 		.pipe(rename("lib.min.css"))
 		.pipe(gulp.dest("dist/css")).on('error', gutil.log);
 })
+
+gulp.task('lint', function() {
+  gulp.src(arrayJS)
+    .pipe(jshint())
+    .pipe(notify(notifyHint.jshint));
+
+});
 
 
 

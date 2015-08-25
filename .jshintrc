@@ -1,0 +1,18 @@
+
+{
+  "camelcase": true,
+  "unused": false,
+  "node": true,
+  "moz": true,
+  "curly": true,
+  "eqeqeq": true,
+  "futurehostile": true,
+  "esnext": true,
+  "browser": true,
+  "globals": {
+    "$": true,
+    "Backbone": true, 
+    "_": true
+	}
+}
+

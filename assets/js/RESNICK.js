@@ -54,7 +54,7 @@ const RESNICK = {
     this.createElement(string);
   },
 
-}
+};
 
 _.extend(Backbone.View.prototype, RESNICK);
 _.extend(Backbone.Router.prototype, RESNICK);
