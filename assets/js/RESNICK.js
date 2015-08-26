@@ -20,9 +20,10 @@ const RESNICK = {
     let $selector = $(document.getElementsByClassName(string)),
         element = document.createElement('div');
 
+    $selector.remove();    
     element.className = string;
     element.dataset.view = string;
-    $selector.remove();
+
     $(element).insertAfter(new RESNICK.Container().$el);
     // while (selector.firstChild) {
     //     selector.removeChild(selector.firstChild);
@@ -56,7 +57,7 @@ const RESNICK = {
   changeState(string) {
     this.navActive(string);
     this.createElement(string);
-  },
+  }, 
 
 };
 

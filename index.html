@@ -54,11 +54,11 @@
 
   <div id="main-container"></div>
 
-  <footer class="container footer">
-    <div class="footer-container">
-      <p>Resnick Family Law</p>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      Resnick Family Law
     </div>
-  </footer>
+  </nav>
 
   <script type="text/template" id="index-container-template">
     <div class="wrapper">
@@ -120,17 +120,49 @@
   </script>
 
   <script type="text/template" id="about-container-template">
-    <div class="container">
-      <div class="wrapper">       
-        <p>About Tester</p>
+  <div class="container" id="about">
+    <div class="row">   
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img class="profile-image" src="assets/img/profile2.jpg" alt="">
       </div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <p>"For more than 17 years, Steve has devoted 100% of his professional practice to family law and related matters, including all aspects of divorce, custody and parenting time, spousal and child support, equitable distribution of property, prenuptial agreements, mediation, arbitration, domestic violence, and post-judgment family-related matters. Brian understands that your divorce and family-related matter can be an extremely emotional and financially trying time in your life. He treats all of his clients with the utmost professionalism, dignity, respect and honesty, while at the same time he will vigorously advocate for his client's interests and protect his client's rights."</p>
+      </div>          
     </div>
+    <div class="row">   
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <h4>Education</h4>
+        <h5>Monclair State University</h5>
+        <ul>
+          <li>B.A., 1993</li>
+          <li>Magna Cum Laude</li>
+        </ul>
+        <h5>Rutgers University School of Law</h5>
+        <ul>
+          <li>J.D., 1997</li>
+          <li>Managing Research Editor: Rutgers Computer and Tech Law Journal</li>
+          <li><a href="http://www.montclair.edu/news/article.php?ArticleID=10477&ChannelID=212">www.montclair.edu/news/article.php</a>
+          </li>
+        </ul>
+        <h4>Honors/Awards</h4>
+        <ul>
+          <li>"Founding member of the Monclair College of Humanities and Social Sciences Dean's Advisory Concil, 2012"</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>          
+    </div>
+  </div>
   </script>
 
   <script type="text/template" id="law-container-template">
 
       <div class="container">
-        <div class="wrapper">      
+        <div class="row">      
           <p>Law Tester</p>
         </div>
       </div>
@@ -139,7 +171,7 @@
 
   <script type="text/template" id="testimonials-container-template">
     <div class="container">
-      <div class="wrapper">       
+      <div class="row">       
         <p>Testimonial Tester</p>
       </div>
     </div>
@@ -147,6 +179,16 @@
 
   <script src="dist/js/lib.js"></script>
   <script src="dist/js/scripts.js"></script>  
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
+
+  
 
 </body>
 </html>
