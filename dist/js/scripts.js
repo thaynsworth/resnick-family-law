@@ -17,6 +17,7 @@ var RESNICK = {
   },
 
   createElement: function createElement(string) {
+    $("#main-container").empty();
     var $selector = $(document.getElementsByClassName(string)),
         element = document.createElement('div');
 
