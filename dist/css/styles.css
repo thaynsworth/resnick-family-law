@@ -5,7 +5,9 @@ body {
 ul {
   list-style: none;
 }
-a {
+a:focus,
+a:hover,
+a:visited {
   text-decoration: none;
 }
 .et-container {
@@ -32,6 +34,9 @@ a {
   text-align: center;
   font-size: 2.75em;
   font-family: 'PT Sans Narrow', sans-serif;
+}
+.header-main .header-left a {
+  color: white;
 }
 @media (min-width: 992px) {
   .header-main .header-left {
