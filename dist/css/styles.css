@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white;
+  background-color: #D1D1D1;
 }
 ul {
   list-style: none;
@@ -60,7 +60,7 @@ a:visited {
   }
 }
 .th-navbar {
-  background-color: #FDFFFC;
+  background-color: #fdfffc;
 }
 .th-navbar ul {
   margin-bottom: 0;
@@ -73,7 +73,7 @@ a:visited {
 }
 .th-navbar span {
   font-size: 1em;
-  color: #FDFFFC;
+  color: #fdfffc;
 }
 @media (min-width: 768px) {
   .th-navbar span {
@@ -94,7 +94,7 @@ a:visited {
 }
 .th-navbar .nav-link {
   text-decoration: none;
-  color: #383D3B;
+  color: #383d3b;
 }
 .th-navbar .nav-text,
 .th-navbar .nav-text a {
@@ -102,7 +102,7 @@ a:visited {
   line-height: 1.4em;
   margin-bottom: 0;
   font-size: 12px;
-  color: #383D3B;
+  color: #383d3b;
   padding-bottom: 2px;
 }
 @media (min-width: 768px) {
@@ -112,7 +112,7 @@ a:visited {
   }
 }
 .nav-active a {
-  border-bottom: 2px solid #383D3B;
+  border-bottom: 2px solid #383d3b;
   text-decoration: underline;
 }
 /* jssor slider bullet navigator skin 21 css */
@@ -266,6 +266,26 @@ a:visited {
   font-size: 30px;
   color: #FFFFFF;
 }
+#about {
+  padding: 30px 0 30px 0;
+}
+#about .about-summary {
+  padding: 20px 0 20px 0;
+  background-color: #fdfffc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+#about .about-summary h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+#about .about-summary p {
+  padding-top: 20px;
+}
+#about .professional-info {
+  background-color: #fdfffc;
+  border-radius: 3px;
+}
 #about img {
   height: 70%;
   width: 70%;
@@ -279,7 +299,7 @@ a:visited {
   /* Height of the footer element */
 }
 .footer-main {
-  background-color: #383D3B;
+  background-color: #383d3b;
   width: 100%;
   height: 90px;
   position: absolute;
