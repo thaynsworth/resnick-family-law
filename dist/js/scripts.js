@@ -109,16 +109,38 @@ RESNICK.AboutView = Backbone.View.extend({
   }
 
 });
+RESNICK.LawView = Backbone.View.extend({
+
+  el: '.law',
+
+  viewContainer: _.template($('#law-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
   wrapper: null,
   indexView: null,
   aboutView: null,
+  lawView: null,
 
   routes: {
     '': 'index',
-    'about': 'about'
+    'about': 'about',
+    'law': 'law'
   },
 
   initialize: function initialize() {
@@ -144,6 +166,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.aboutView;
+    this.wrapper.render();
+  },
+
+  law: function law() {
+    this.changeState('law');
+
+    if (this.lawView === null) {
+      this.lawView = new RESNICK.LawView();
+    }
+
+    this.wrapper.child = this.lawView;
     this.wrapper.render();
   }
 

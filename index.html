@@ -35,13 +35,16 @@
       <ul class="nav-items"> 
         <li data-view="about" class="nav-item nav-about">
           <p class="nav-text"><a class="nav-link" href="#about">Steve Resnick</a></p>
-        </li>       
-        <li data-view="work" class="nav-item nav-work">
-          <p class="nav-text"><a class="nav-link" href="#work">Practice Areas</a></p>
         </li>
+        <span>|</span>       
+        <li data-view="law" class="nav-item nav-law">
+          <p class="nav-text"><a class="nav-link" href="#law">Practice Areas</a></p>
+        </li>
+        <span>|</span>
         <li data-view="testimonials" class="nav-item nav-testimonials">
           <p class="nav-text"><a class="nav-link" href="#testimonials">Testimonials</a></p>
         </li>
+        <span>|</span>
         <li data-view="contact" class="nav-item nav-contact">
           <p class="nav-text"><a class="nav-link" href="#contact">Contact</a></p>
         </li>
@@ -124,6 +127,15 @@
       </div>
     </div>
   </script>
+
+  <script type="text/template" id="law-container-template">
+    <div class="container">
+      <div class="wrapper">
+        <img src="assets/img/loading.png">
+        <p>Law Tester</p>
+      </div>
+    </div>
+  </script>  
 
   <script src="dist/js/lib.js"></script>
   <script src="dist/js/scripts.js"></script>  

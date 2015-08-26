@@ -4,10 +4,12 @@
   	wrapper		: null,
   	indexView	: null,
   	aboutView : null, 
+    lawView   : null,
 
     routes: {
       ''      : 'index',
-      'about' : 'about'
+      'about' : 'about',
+      'law'   : 'law'
     },
 
     initialize() {
@@ -34,6 +36,17 @@
 
       this.wrapper.child = this.aboutView;
       this.wrapper.render();
-    }	  
+    },
+
+    law() {
+      this.changeState('law');
+
+      if (this.lawView === null) {
+        this.lawView = new RESNICK.LawView();
+      }
+
+      this.wrapper.child = this.lawView;
+      this.wrapper.render();
+    },   	  
 
   }); 
