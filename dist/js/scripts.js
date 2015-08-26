@@ -24,6 +24,9 @@ var RESNICK = {
     element.dataset.view = string;
     $selector.remove();
     $(element).insertAfter(new RESNICK.Container().$el);
+    // while (selector.firstChild) {
+    //     selector.removeChild(selector.firstChild);
+    // }
   },
 
   tojquery: function tojquery(element) {
@@ -129,6 +132,26 @@ RESNICK.LawView = Backbone.View.extend({
   }
 
 });
+RESNICK.TestimonialsView = Backbone.View.extend({
+
+  el: '.law',
+
+  viewContainer: _.template($('#testimonials-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
@@ -136,11 +159,13 @@ RESNICK.Router = Backbone.Router.extend({
   indexView: null,
   aboutView: null,
   lawView: null,
+  testimonialsView: null,
 
   routes: {
     '': 'index',
     'about': 'about',
-    'law': 'law'
+    'law': 'law',
+    'testimonials': 'testimonials'
   },
 
   initialize: function initialize() {
@@ -177,6 +202,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.lawView;
+    this.wrapper.render();
+  },
+
+  testimonials: function testimonials() {
+    this.changeState('testimonials');
+
+    if (this.testimonialsView === null) {
+      this.testimonialView = new RESNICK.TestimonialsView();
+    }
+
+    this.wrapper.child = this.testimonialsView;
     this.wrapper.render();
   }
 

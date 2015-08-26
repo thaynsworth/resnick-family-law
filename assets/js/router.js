@@ -1,15 +1,17 @@
 
   RESNICK.Router = Backbone.Router.extend({
 
-  	wrapper		: null,
-  	indexView	: null,
-  	aboutView : null, 
-    lawView   : null,
+  	wrapper		        : null,
+  	indexView	        : null,
+  	aboutView         : null, 
+    lawView           : null,
+    testimonialsView  : null,
 
     routes: {
-      ''      : 'index',
-      'about' : 'about',
-      'law'   : 'law'
+      ''              : 'index',
+      'about'         : 'about',
+      'law'           : 'law',
+      'testimonials'  : 'testimonials'
     },
 
     initialize() {
@@ -47,6 +49,17 @@
 
       this.wrapper.child = this.lawView;
       this.wrapper.render();
-    },   	  
+    },
+
+    testimonials() {
+      this.changeState('testimonials');
+
+      if (this.testimonialsView === null) {
+        this.testimonialView = new RESNICK.TestimonialsView();
+      }
+
+      this.wrapper.child = this.testimonialsView;
+      this.wrapper.render();
+    },       	  
 
   }); 

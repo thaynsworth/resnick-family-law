@@ -24,6 +24,10 @@ const RESNICK = {
     element.dataset.view = string;
     $selector.remove();
     $(element).insertAfter(new RESNICK.Container().$el);
+    // while (selector.firstChild) {
+    //     selector.removeChild(selector.firstChild);
+    // }
+  
   },
 
   tojquery(element) {
