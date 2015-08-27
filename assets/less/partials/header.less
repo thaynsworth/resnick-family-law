@@ -2,7 +2,6 @@
 	background-color: @blue-header;
 	height: 100%;
 	color: white;
-	// padding: 5em
 
 	ul {
 		list-style-type: none;
@@ -21,14 +20,18 @@
 			color: white;
 			border: 3px solid black;
 			border-radius: 2px;
-			padding: 2px 4px 2px 4px;
-			box-shadow: 1px 1px 2px black;
+			padding: 5px 4px 5px 4px;
+			box-shadow: 2px 2px 3px black;
+			
+			@media (min-width: @md) {
+				padding: 10px 15px 10px 15px;
+			}
 		}
 
 		@media (min-width: @md) {
 			text-align: left;
 			font-size: 3.5em;
-			padding: 6px 20px 6px 20px;
+			// padding: 6px 20px 6px 20px;
 		}
 	}
 
