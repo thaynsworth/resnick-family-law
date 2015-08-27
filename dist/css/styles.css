@@ -79,7 +79,7 @@ a:visited {
 }
 .th-navbar span {
   font-size: 1em;
-  color: #fdfffc;
+  color: #383d3b;
 }
 @media (min-width: 768px) {
   .th-navbar span {
@@ -107,14 +107,14 @@ a:visited {
   text-transform: uppercase;
   line-height: 1.4em;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 15px;
   color: #383d3b;
   padding-bottom: 2px;
 }
 @media (min-width: 768px) {
   .th-navbar .nav-text,
   .th-navbar .nav-text a {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .nav-active a {
