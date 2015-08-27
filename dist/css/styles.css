@@ -334,7 +334,35 @@ a:visited {
   padding: 30px 0 30px 0;
 }
 #home .resnick-summary {
-  background-color: #fdfffc;
+  background-color: #e8c547;
   padding: 10px;
   border-radius: 3px;
+}
+#home .resnick-summary h2 {
+  border-bottom: 1px solid #383d3b;
+  font-size: 40px;
+}
+#home .resnick-summary p {
+  font-size: 20px;
+}
+#home .resnick-summary2 {
+  margin-top: 30px;
+}
+#home .resnick-summary2 .practice-areas h3 {
+  border-bottom: 1px solid #383d3b;
+}
+#home .resnick-summary2 .testimonials {
+  border: 2px solid #383d3b;
+  border-radius: 3px;
+  background-color: #fdfffc;
+}
+#home .resnick-summary2 .testimonials h3 {
+  border-bottom: 1px solid #383d3b;
+}
+#home .resnick-summary2 .testimonials p {
+  padding-bottom: 10px;
+  font-style: italic;
+}
+#home .resnick-summary2 .testimonials p span {
+  font-weight: bold;
 }
