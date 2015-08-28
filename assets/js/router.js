@@ -55,7 +55,7 @@
       this.changeState('testimonials');
 
       if (this.testimonialsView === null) {
-        this.testimonialView = new RESNICK.TestimonialsView();
+        this.testimonialsView = new RESNICK.TestimonialsView();
       }
 
       this.wrapper.child = this.testimonialsView;

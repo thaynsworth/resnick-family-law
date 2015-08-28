@@ -360,18 +360,18 @@ a:visited {
 #home .resnick-summary2 .practice-areas li {
   font-size: 17px;
 }
-#home .resnick-summary2 .testimonials {
+#home .resnick-summary2 .testimonials-home {
   border: 2px solid #383d3b;
   border-radius: 3px;
   background-color: #fdfffc;
   padding: 20px;
 }
-#home .resnick-summary2 .testimonials p:first-child {
+#home .resnick-summary2 .testimonials-home p:first-child {
   font-style: italic;
   font-weight: bold;
   font-size: 17px;
 }
-#home .resnick-summary2 .testimonials p:first-child span {
+#home .resnick-summary2 .testimonials-home p:first-child span {
   font-style: italic;
 }
 #home .resnick-summary2 .home-contact {
@@ -396,4 +396,22 @@ a:visited {
 #home .resnick-summary2 .home-contact a:hover {
   background-color: #336699;
   color: white;
+}
+#testimonials .testimonial-header {
+  background-color: #f2ee7a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#testimonials .testimonial-header h2 {
+  border-bottom: 2px solid black;
+}
+#testimonials .box2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#testimonials .box1 {
+  background-color: #fdfffc;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

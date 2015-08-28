@@ -136,7 +136,7 @@ RESNICK.LawView = Backbone.View.extend({
 });
 RESNICK.TestimonialsView = Backbone.View.extend({
 
-  el: '.law',
+  el: '.testimonials',
 
   viewContainer: _.template($('#testimonials-container-template').html()),
 
@@ -211,7 +211,7 @@ RESNICK.Router = Backbone.Router.extend({
     this.changeState('testimonials');
 
     if (this.testimonialsView === null) {
-      this.testimonialView = new RESNICK.TestimonialsView();
+      this.testimonialsView = new RESNICK.TestimonialsView();
     }
 
     this.wrapper.child = this.testimonialsView;

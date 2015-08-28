@@ -1,6 +1,6 @@
 RESNICK.TestimonialsView = Backbone.View.extend({
 
-  el: '.law',
+  el: '.testimonials',
 
   viewContainer: _.template($('#testimonials-container-template').html()),
 
