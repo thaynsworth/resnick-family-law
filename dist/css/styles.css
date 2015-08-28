@@ -377,11 +377,12 @@ a:visited {
 #home .resnick-summary2 .home-contact {
   margin-top: 50px;
   width: 100%;
+  text-align: center;
 }
 #home .resnick-summary2 .home-contact a {
   border: 3px solid #336699;
   border-radius: 3px;
-  background-color: #d1d1d1;
+  background-color: #fdfffc;
   color: #336699;
   padding: 20px;
   font-size: 40px;
