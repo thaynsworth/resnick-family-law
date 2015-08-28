@@ -332,11 +332,13 @@ a:visited {
 }
 #home {
   padding: 30px 0 30px 0;
+  margin-bottom: 40px;
 }
 #home .resnick-summary {
   background-color: #f5fdc6;
   padding-top: 20px;
   padding-bottom: 40px;
+  margin-bottom: 30px;
   border-radius: 3px;
   border: 1px solid black;
 }
@@ -351,8 +353,11 @@ a:visited {
   margin-top: 30px;
 }
 #home .resnick-summary2 .practice-areas {
+  border: 1px solid #383d3b;
   border-radius: 3px;
   background-color: #fdfffc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 #home .resnick-summary2 .practice-areas h3 {
   border-bottom: 1px solid #383d3b;
@@ -361,8 +366,11 @@ a:visited {
 #home .resnick-summary2 .practice-areas li {
   font-size: 17px;
 }
+#home .resnick-summary2 .practice-areas a {
+  font-size: 17px;
+}
 #home .resnick-summary2 .testimonials-home {
-  border: 2px solid #383d3b;
+  border: 4px solid #383d3b;
   border-radius: 3px;
   background-color: #fdfffc;
   padding: 20px;
@@ -374,6 +382,9 @@ a:visited {
 }
 #home .resnick-summary2 .testimonials-home p:first-child span {
   font-style: italic;
+}
+#home .resnick-summary2 .testimonials-home a {
+  font-size: 17px;
 }
 #home .resnick-summary2 .home-contact {
   margin-top: 50px;
