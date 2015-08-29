@@ -281,18 +281,23 @@ a:visited {
 #about {
   padding: 30px 0 30px 0;
 }
-#about .about-summary {
-  padding: 20px 0 20px 0;
-  background-color: #fdfffc;
-  border-radius: 3px;
-  margin-bottom: 20px;
+#about .about-header {
+  margin-bottom: 40px;
 }
-#about .about-summary h2 {
+#about .about-header .about-summary {
+  background-color: #f5fdc6;
+  border-radius: 3px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid black;
+}
+#about .about-header .about-summary h2 {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
+  font-size: 40px;
 }
-#about .about-summary p {
-  padding-top: 20px;
+#about .about-header .about-summary p {
+  font-size: 18px;
 }
 #about .professional-info {
   background-color: #fdfffc;
