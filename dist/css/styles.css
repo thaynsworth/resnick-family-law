@@ -476,9 +476,28 @@ a:visited {
 }
 #law .law-areas {
   background-color: #fdfffc;
-  border: 1px solid black;
   padding: 20px 0px 20px 0px;
 }
 #law .law-areas li {
+  font-size: 20px;
+}
+#contact {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#contact .contact-header {
+  background-color: #f5fdc6;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 3px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid black;
+}
+#contact .contact-header h2 {
+  border-bottom: 2px solid black;
+  font-size: 40px;
+}
+#contact .contact-header p {
   font-size: 20px;
 }
