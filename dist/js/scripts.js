@@ -134,6 +134,26 @@ RESNICK.LawView = Backbone.View.extend({
   }
 
 });
+RESNICK.ContactView = Backbone.View.extend({
+
+  el: '.contact',
+
+  viewContainer: _.template($('#contact-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 RESNICK.TestimonialsView = Backbone.View.extend({
 
   el: '.testimonials',
@@ -162,12 +182,14 @@ RESNICK.Router = Backbone.Router.extend({
   aboutView: null,
   lawView: null,
   testimonialsView: null,
+  contactView: null,
 
   routes: {
     '': 'index',
     'about': 'about',
     'law': 'law',
-    'testimonials': 'testimonials'
+    'testimonials': 'testimonials',
+    'contact': 'contact'
   },
 
   initialize: function initialize() {
@@ -215,6 +237,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.testimonialsView;
+    this.wrapper.render();
+  },
+
+  contact: function contact() {
+    this.changeState('contact');
+
+    if (this.contactView === null) {
+      this.contactView = new RESNICK.ContactView();
+    }
+
+    this.wrapper.child = this.contactView;
     this.wrapper.render();
   }
 
