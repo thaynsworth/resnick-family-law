@@ -4,26 +4,37 @@ const RESNICK = {
 
 	init() {
 		let router = new RESNICK.Router();
-    // RESNICK.listeners();
+    RESNICK.listeners();
 		Backbone.history.start();
 	},
 
-  // listeners() {
-  //   RESNICK.mobileNav();
-  //   RESNICK.sliderFire($);
-  // },
+  listeners() {
+    RESNICK.mobileNav();
+    // RESNICK.sliderFire($);
+  },
 
-  // mobileNav() {
-  //   $(document).on('click', "#nav-trigger span", function(){
-  //       if ($("nav#nav-mobile ul").hasClass("expanded")) {
-  //           $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-  //           $(this).removeClass("open");
-  //       } else {
-  //           $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-  //           $(this).addClass("open");
-  //       }
-  //   });
-  // },
+  mobileNav() {
+    $(document).on('click', "#nav-trigger span", function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+    $(document).on('click', "#nav-mobile li", function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });    
+
+  },
 
   // sliderFire($) {
   //   console.log('Jssssoororrro');
