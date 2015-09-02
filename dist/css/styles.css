@@ -135,7 +135,7 @@ nav#nav-main a:hover {
 nav#nav-mobile {
   position: relative;
   display: none;
-  z-index: 999;
+  z-index: 99;
 }
 nav#nav-mobile ul {
   display: none;
