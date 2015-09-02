@@ -69,7 +69,7 @@ var notifyHint = {
     }
   }
 
-gulp.task('default', ['css:lib', 'js:lib', 'js', 'less', 'watch', 'lint']);
+gulp.task('default', ['css:lib', 'css:fonts', 'js:lib', 'js', 'less', 'watch', 'lint']);
 
 gulp.task('watch', function() {
   gulp.watch(arrayJS, ['js', 'lint']);
@@ -114,7 +114,12 @@ gulp.task('css:lib', function(){
 		.pipe(cssmin())
 		.pipe(rename("lib.min.css"))
 		.pipe(gulp.dest("dist/css")).on('error', gutil.log);
-})
+});
+
+gulp.task('css:fonts', function(){
+  return gulp.src("assets/css/fonts/*")
+    .pipe(gulp.dest("dist/fonts")).on('error', gutil.log);
+});
 
 gulp.task('lint', function() {
   gulp.src(arrayJS)
