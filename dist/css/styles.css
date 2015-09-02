@@ -90,8 +90,9 @@ a:visited {
   height: 10px;
   content: "";
   border-left: solid 10px transparent;
-  border-top: solid 10px #fff;
+  border-top: solid 10px #383d3b;
   border-right: solid 10px transparent;
+  color: #383d3b;
 }
 #nav-trigger span:hover {
   background-color: #383d3b;
@@ -100,11 +101,8 @@ a:visited {
 #nav-trigger span.open:after {
   border-left: solid 10px transparent;
   border-top: none;
-  border-bottom: solid 10px #fff;
+  border-bottom: solid 10px #fdfffc;
   border-right: solid 10px transparent;
-}
-nav {
-  margin-bottom: 30px;
 }
 nav#nav-main {
   background-color: #fdfffc;
@@ -128,6 +126,7 @@ nav#nav-main a {
   display: block;
   color: #383d3b;
   padding: 10px 30px;
+  font-size: 22px;
 }
 nav#nav-main a:hover {
   background-color: #383d3b;
