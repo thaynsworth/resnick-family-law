@@ -4,9 +4,32 @@ var RESNICK = {
 
   init: function init() {
     var router = new RESNICK.Router();
-
+    // RESNICK.listeners();
     Backbone.history.start();
   },
+
+  // listeners() {
+  //   RESNICK.mobileNav();
+  //   RESNICK.sliderFire($);
+  // },
+
+  // mobileNav() {
+  //   $(document).on('click', "#nav-trigger span", function(){
+  //       if ($("nav#nav-mobile ul").hasClass("expanded")) {
+  //           $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+  //           $(this).removeClass("open");
+  //       } else {
+  //           $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+  //           $(this).addClass("open");
+  //       }
+  //   });
+  // },
+
+  // sliderFire($) {
+  //   console.log('Jssssoororrro');
+  //     let options = { $AutoPlay: true };
+  //     let jssor_slider1 = new $JssorSlider$('slider1_container', options);
+  // }, 
 
   setView: function setView(selector, template) {
     var $selector = this.tojquery(selector);
