@@ -15,23 +15,18 @@ var RESNICK = {
 
   mobileNav: function mobileNav() {
     $(document).on('click', "#nav-trigger span", function () {
-      $("#nav-mobile").html($("#nav-main").html());
-      if ($("nav#nav-mobile ul").hasClass("expanded")) {
+      if ($("#nav-mobile ul").hasClass("expanded")) {
         $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
         $(this).removeClass("open");
       } else {
+        $("#nav-mobile").html($("#nav-main").html());
         $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
         $(this).addClass("open");
       }
     });
     $(document).on('click', "#nav-mobile li", function () {
-      if ($("nav#nav-mobile ul").hasClass("expanded")) {
-        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-        $(this).removeClass("open");
-      } else {
-        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-        $(this).addClass("open");
-      }
+      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+      $(this).removeClass("open");
     });
   },
 
