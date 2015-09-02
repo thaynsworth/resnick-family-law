@@ -73,11 +73,12 @@ a:visited {
 -------------------------------------------------------------- */
 #nav-trigger {
   display: none;
-  text-align: center;
+  text-align: right;
 }
 #nav-trigger span {
   display: inline-block;
-  padding: 10px 30px;
+  height: 100%;
+  padding: 15px 30px;
   background-color: #fdfffc;
   color: #383d3b;
   cursor: pointer;
@@ -128,13 +129,15 @@ nav#nav-mobile ul {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 30px;
+  padding-left: 30px;
   text-align: center;
   background-color: #fdfffc;
 }
 nav#nav-mobile li {
   display: block;
   padding: 5px 0;
-  margin: 0 5px;
+  margin: 10px 5px;
   border-bottom: solid 1px #383d3b;
 }
 nav#nav-mobile li:last-child {
@@ -144,6 +147,7 @@ nav#nav-mobile a {
   display: block;
   color: #383d3b;
   padding: 10px 30px;
+  font-size: 18px;
 }
 nav#nav-mobile a:hover {
   background-color: #383d3b;

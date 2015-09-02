@@ -71,11 +71,12 @@
 -------------------------------------------------------------- */
 #nav-trigger {
   display: none;
-  text-align: center; 
+  text-align: right; 
 
   span {
     display: inline-block;
-    padding: 10px 30px;
+    height: 100%;
+    padding: 15px 30px;
     background-color: @off-white;
     color: @dark-grey;
     cursor: pointer;
@@ -161,6 +162,8 @@ nav#nav-mobile {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
     background-color: @off-white; 
   }
@@ -168,7 +171,7 @@ nav#nav-mobile {
   nav#nav-mobile li {
     display: block;
     padding: 5px 0;
-    margin: 0 5px;
+    margin: 10px 5px;
     border-bottom: solid 1px @dark-grey; 
   }
 
@@ -180,6 +183,7 @@ nav#nav-mobile {
     display: block;
     color: @dark-grey;
     padding: 10px 30px; 
+    font-size: 18px;
   }
 
     nav#nav-mobile a:hover {
