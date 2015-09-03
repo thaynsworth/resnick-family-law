@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+/* Implementation */
+/* Implementation */
+/* Implementation */
+/* Implementation */
 html,
 body {
   margin: 0;
@@ -93,6 +97,11 @@ a:visited {
 nav#nav-main {
   background-color: #fdfffc;
   padding: 4px 0;
+}
+nav#nav-main .nav-active a {
+  background-color: #383d3b;
+  color: #fdfffc;
+  border: 3px solid #db7f67;
 }
 nav#nav-main ul {
   list-style-type: none;

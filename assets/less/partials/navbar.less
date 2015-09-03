@@ -118,6 +118,15 @@ nav {
 nav#nav-main {
   background-color: @off-white;
   padding: 4px 0; 
+
+  .nav-active {
+    a {
+      background-color: @dark-grey;
+      color: @off-white; 
+      border: 3px solid @burnt-red;       
+    }
+  }
+
 }
 
   nav#nav-main ul {
@@ -147,7 +156,7 @@ nav#nav-main {
     nav#nav-main a:hover {
       background-color: @dark-grey;
       color: @off-white; 
-    }
+    }  
 
 nav#nav-mobile {
   position: relative;
@@ -191,7 +200,6 @@ nav#nav-mobile {
       background-color: @dark-grey;
       color: @off-white;
     }
-
 
 /* =Media Queries
 -------------------------------------------------------------- */
