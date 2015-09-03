@@ -167,6 +167,14 @@ nav#nav-mobile a:hover {
 }
 /* =Media Queries
 -------------------------------------------------------------- */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  nav#nav-main a {
+    display: block;
+    color: #383d3b;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
 @media all and (max-width: 900px) {
   #nav-trigger {
     display: block;
