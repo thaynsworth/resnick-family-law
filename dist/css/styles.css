@@ -400,15 +400,24 @@ nav#nav-mobile a:hover {
   background-color: #fdfffc;
   padding: 20px 0 40px 0;
   margin-bottom: 30px;
+  color: #383d3b;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-#home .resnick-summary h2 {
-  border-bottom: 1px solid #383d3b;
+#home .resnick-summary div {
+  padding: 0 15% 0 15%;
+}
+#home .resnick-summary div h2 {
   font-size: 50px;
 }
-#home .resnick-summary p {
+#home .resnick-summary div h3 {
+  font-size: 24px;
+  border-bottom: 1px solid #383d3b;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+#home .resnick-summary div p {
   font-size: 22px;
 }
 #home .resnick-summary2 {
