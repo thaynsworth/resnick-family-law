@@ -396,29 +396,65 @@ nav#nav-mobile a:hover {
   padding: 0 10px 0 10px;
   color: white;
 }
-#home .resnick-summary {
+#home .home-summary {
   background-color: #fdfffc;
-  padding: 20px 0 40px 0;
-  margin-bottom: 30px;
+  padding: 40px 20% 60px 20%;
   color: #383d3b;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-#home .resnick-summary div {
-  padding: 0 15% 0 15%;
+#home .home-summary h2 {
+  font-size: 60px;
+  color: #336699;
 }
-#home .resnick-summary div h2 {
-  font-size: 50px;
-}
-#home .resnick-summary div h3 {
+#home .home-summary h3 {
   font-size: 24px;
   border-bottom: 1px solid #383d3b;
   font-style: italic;
   padding-bottom: 10px;
 }
-#home .resnick-summary div p {
+#home .home-summary p {
   font-size: 22px;
+}
+#home .home-testimonial {
+  background-color: #d1d1d1;
+  padding: 40px 10% 60px 10%;
+  color: #383d3b;
+}
+#home .home-testimonial p {
+  font-size: 22px;
+}
+#home .home-testimonial p:first-child {
+  font-style: italic;
+  font-weight: bold;
+}
+#home .home-testimonial a {
+  border: 3px solid #365C5A;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fdfffc;
+  color: #365C5A;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#home .home-testimonial a:hover {
+  background-color: #365C5A;
+  color: #fdfffc;
+}
+#home .home-testimonial div:nth-child(2) {
+  padding-top: 5%;
+}
+#home .home-news {
+  background-color: #fdfffc;
+  padding: 40px 10% 60px 10%;
 }
 #home .resnick-summary2 {
   margin-top: 30px;
