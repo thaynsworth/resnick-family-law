@@ -417,9 +417,20 @@ nav#nav-mobile a:hover {
 #home .home-summary p {
   font-size: 22px;
 }
-#home .home-testimonial {
+#home .home-icons {
   background-color: #d1d1d1;
-  padding: 40px 10% 60px 10%;
+  padding: 60px 10% 60px 10%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #383d3b;
+}
+#home .home-testimonial {
+  background-color: #fdfffc;
+  padding: 60px 10% 60px 10%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   color: #383d3b;
 }
 #home .home-testimonial p {
@@ -450,74 +461,11 @@ nav#nav-mobile a:hover {
   color: #fdfffc;
 }
 #home .home-testimonial div:nth-child(2) {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 #home .home-news {
   background-color: #fdfffc;
   padding: 40px 10% 60px 10%;
-}
-#home .resnick-summary2 {
-  margin-top: 30px;
-}
-#home .resnick-summary2 .practice-areas {
-  border: 1px solid #383d3b;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #fdfffc;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-#home .resnick-summary2 .practice-areas h3 {
-  border-bottom: 1px solid #383d3b;
-  font-size: 30px;
-}
-#home .resnick-summary2 .practice-areas a {
-  font-size: 17px;
-}
-#home .resnick-summary2 .testimonials-home {
-  border: 2px solid #383d3b;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #fdfffc;
-  padding: 20px;
-}
-#home .resnick-summary2 .testimonials-home p:first-child {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 17px;
-}
-#home .resnick-summary2 .testimonials-home p:first-child span {
-  font-style: italic;
-}
-#home .resnick-summary2 .testimonials-home a {
-  font-size: 17px;
-}
-#home .resnick-summary2 .home-contact {
-  margin-top: 50px;
-  width: 100%;
-  text-align: center;
-}
-#home .resnick-summary2 .home-contact a {
-  border: 3px solid #db7f67;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #fdfffc;
-  color: #db7f67;
-  padding: 20px;
-  font-size: 40px;
-  font-weight: bold;
-  -webkit-transition: all 0.2 ease;
-  -moz-transition: all 0.2 ease;
-  -o-transition: all 0.2 ease;
-  -ms-transition: all 0.2 ease;
-  transition: all 0.2s ease;
-}
-#home .resnick-summary2 .home-contact a:hover {
-  background-color: #db7f67;
-  color: white;
 }
 #testimonials {
   margin-top: 40px;
