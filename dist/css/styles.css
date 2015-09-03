@@ -425,6 +425,10 @@ nav#nav-mobile a:hover {
   border-radius: 3px;
   color: #383d3b;
 }
+#home .home-icons img {
+  height: 50%;
+  width: 50%;
+}
 #home .home-testimonial {
   background-color: #fdfffc;
   padding: 60px 10% 60px 10%;
