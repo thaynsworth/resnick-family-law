@@ -43,7 +43,7 @@ const RESNICK = {
 
         console.log('did jssor click event fire?');
 
-        $("#slider1_container").remove();
+        // $("#slider1_container").remove();
 
         let options = { $AutoPlay: true };
         let jssor_slider1 = new $JssorSlider$('slider1_container', options);           

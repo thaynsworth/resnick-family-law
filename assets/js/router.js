@@ -6,6 +6,7 @@
   	aboutView         : null, 
     lawView           : null,
     testimonialsView  : null,
+    newsView          : null,
     contactView       : null,
 
     routes: {
@@ -13,6 +14,7 @@
       'about'         : 'about',
       'law'           : 'law',
       'testimonials'  : 'testimonials',
+      'news'          : 'news',
       'contact'       : 'contact'   
     },
 
@@ -62,7 +64,18 @@
 
       this.wrapper.child = this.testimonialsView;
       this.wrapper.render();
-    }, 
+    },
+
+    news() {
+      this.changeState('news');
+
+      if (this.newsView === null) {
+        this.newsView = new RESNICK.NewsView();
+      }
+
+      this.wrapper.child = this.newsView;
+      this.wrapper.render();
+    },     
 
     contact() {
       this.changeState('contact');

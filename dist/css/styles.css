@@ -102,7 +102,7 @@ nav#nav-main {
 nav#nav-main .nav-active a {
   background-color: #383d3b;
   color: #fdfffc;
-  border: 3px solid #db7f67;
+  border: 2px solid #db7f67;
 }
 nav#nav-main ul {
   list-style-type: none;
@@ -122,7 +122,7 @@ nav#nav-main a {
   display: block;
   color: #383d3b;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 nav#nav-main a:hover {
   background-color: #383d3b;

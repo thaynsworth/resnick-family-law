@@ -41,7 +41,7 @@ var RESNICK = {
 
       console.log('did jssor click event fire?');
 
-      $("#slider1_container").remove();
+      // $("#slider1_container").remove();
 
       var options = { $AutoPlay: true };
       var jssor_slider1 = new $JssorSlider$('slider1_container', options);
@@ -217,6 +217,26 @@ RESNICK.TestimonialsView = Backbone.View.extend({
   }
 
 });
+RESNICK.NewsView = Backbone.View.extend({
+
+  el: '.news',
+
+  viewContainer: _.template($('#news-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
@@ -225,6 +245,7 @@ RESNICK.Router = Backbone.Router.extend({
   aboutView: null,
   lawView: null,
   testimonialsView: null,
+  newsView: null,
   contactView: null,
 
   routes: {
@@ -232,6 +253,7 @@ RESNICK.Router = Backbone.Router.extend({
     'about': 'about',
     'law': 'law',
     'testimonials': 'testimonials',
+    'news': 'news',
     'contact': 'contact'
   },
 
@@ -280,6 +302,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.testimonialsView;
+    this.wrapper.render();
+  },
+
+  news: function news() {
+    this.changeState('news');
+
+    if (this.newsView === null) {
+      this.newsView = new RESNICK.NewsView();
+    }
+
+    this.wrapper.child = this.newsView;
     this.wrapper.render();
   },
 
