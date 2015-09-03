@@ -34,6 +34,7 @@ var arrayJS = [
 	"assets/js/views/testimonials.js",
   "assets/js/views/news.js",
   "assets/js/views/seminar.js",
+  "assets/js/views/resources.js",
 	"assets/js/router.js",  
 	"assets/js/main.js"
 ]

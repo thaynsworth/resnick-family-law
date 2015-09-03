@@ -257,6 +257,26 @@ RESNICK.SeminarView = Backbone.View.extend({
   }
 
 });
+RESNICK.ResourcesView = Backbone.View.extend({
+
+  el: '.resources',
+
+  viewContainer: _.template($('#resources-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
@@ -267,6 +287,7 @@ RESNICK.Router = Backbone.Router.extend({
   testimonialsView: null,
   newsView: null,
   seminarView: null,
+  resourcesView: null,
   contactView: null,
 
   routes: {
@@ -276,6 +297,7 @@ RESNICK.Router = Backbone.Router.extend({
     'testimonials': 'testimonials',
     'news': 'news',
     'seminar': 'seminar',
+    'resources': 'resources',
     'contact': 'contact'
   },
 
@@ -346,6 +368,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.seminarView;
+    this.wrapper.render();
+  },
+
+  resources: function resources() {
+    this.changeState('resources');
+
+    if (this.resourcesView === null) {
+      this.resourcesView = new RESNICK.ResourcesView();
+    }
+
+    this.wrapper.child = this.resourcesView;
     this.wrapper.render();
   },
 
