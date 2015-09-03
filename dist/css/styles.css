@@ -43,6 +43,8 @@ a:visited {
 .header-main .header-left a {
   color: white;
   border: 3px solid black;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   padding: 5px 4px 5px 4px;
   box-shadow: 2px 2px 3px black;
@@ -325,8 +327,14 @@ nav#nav-mobile a:hover {
 #about .about-header {
   margin-bottom: 40px;
 }
+#about .about-header img {
+  height: 50%;
+  width: 50%;
+}
 #about .about-header .about-summary {
   background-color: #f5fdc6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -342,6 +350,8 @@ nav#nav-mobile a:hover {
 }
 #about .professional-info {
   background-color: #fdfffc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 #about img {
@@ -385,6 +395,8 @@ nav#nav-mobile a:hover {
   padding-top: 20px;
   padding-bottom: 40px;
   margin-bottom: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid black;
 }
@@ -400,6 +412,8 @@ nav#nav-mobile a:hover {
 }
 #home .resnick-summary2 .practice-areas {
   border: 1px solid #383d3b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fdfffc;
   margin-bottom: 20px;
@@ -414,6 +428,8 @@ nav#nav-mobile a:hover {
 }
 #home .resnick-summary2 .testimonials-home {
   border: 2px solid #383d3b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fdfffc;
   padding: 20px;
@@ -436,6 +452,8 @@ nav#nav-mobile a:hover {
 }
 #home .resnick-summary2 .home-contact a {
   border: 3px solid #db7f67;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #fdfffc;
   color: #db7f67;
@@ -460,6 +478,8 @@ nav#nav-mobile a:hover {
   background-color: #f5fdc6;
   margin-bottom: 40px;
   text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -475,6 +495,8 @@ nav#nav-mobile a:hover {
 #testimonials .box2 {
   padding-top: 30px;
   padding-bottom: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 #testimonials .box2 p:first-child {
@@ -488,6 +510,8 @@ nav#nav-mobile a:hover {
   background-color: #fdfffc;
   padding-top: 30px;
   padding-bottom: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 #testimonials .box1 p:first-child {
@@ -505,6 +529,8 @@ nav#nav-mobile a:hover {
   background-color: #f5fdc6;
   margin-bottom: 40px;
   text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -532,6 +558,8 @@ nav#nav-mobile a:hover {
   background-color: #f5fdc6;
   margin-bottom: 40px;
   text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   padding-bottom: 20px;
   padding-top: 10px;

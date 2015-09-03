@@ -10,7 +10,7 @@ var RESNICK = {
 
   listeners: function listeners() {
     RESNICK.mobileNav();
-    // RESNICK.sliderFire($);
+    RESNICK.sliderFire($);
   },
 
   mobileNav: function mobileNav() {
@@ -30,11 +30,26 @@ var RESNICK = {
     });
   },
 
-  // sliderFire($) {
-  //   console.log('Jssssoororrro');
-  //     let options = { $AutoPlay: true };
-  //     let jssor_slider1 = new $JssorSlider$('slider1_container', options);
-  // }, 
+  sliderFire: function sliderFire($) {
+    // $(document).ready(function ($) {
+    //     console.log('did jssor fire?');
+    //     let options = { $AutoPlay: true };
+    //     let jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    // });
+
+    $(document).on('click', "#nav-main a", function ($) {
+
+      console.log('did jssor click event fire?');
+
+      $("#slider1_container").remove();
+
+      var options = { $AutoPlay: true };
+      var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+    // console.log('Jssssoororrro');
+    //   let options = { $AutoPlay: true };
+    //   let jssor_slider1 = new $JssorSlider$('slider1_container', options);
+  },
 
   setView: function setView(selector, template) {
     var $selector = this.tojquery(selector);

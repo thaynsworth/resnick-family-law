@@ -10,32 +10,48 @@ const RESNICK = {
 
   listeners() {
     RESNICK.mobileNav();
-    // RESNICK.sliderFire($);
+    RESNICK.sliderFire($);
   },
 
   mobileNav() {
     $(document).on('click', "#nav-trigger span", function(){   
-        if ($("#nav-mobile ul").hasClass("expanded")) {
-            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-            $(this).removeClass("open");
-        } else {
-            $("#nav-mobile").html($("#nav-main").html());
-            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-            $(this).addClass("open");
-        }
+      if ($("#nav-mobile ul").hasClass("expanded")) {
+        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+        $(this).removeClass("open");
+      } else {
+        $("#nav-mobile").html($("#nav-main").html());
+        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+        $(this).addClass("open");
+      }
     });
     $(document).on('click', "#nav-mobile li", function(){
-        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-        $(this).removeClass("open");      
+      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+      $(this).removeClass("open");      
     });    
 
   },
 
-  // sliderFire($) {
-  //   console.log('Jssssoororrro');
-  //     let options = { $AutoPlay: true };
-  //     let jssor_slider1 = new $JssorSlider$('slider1_container', options);
-  // },  
+  sliderFire($) {
+    // $(document).ready(function ($) {
+    //     console.log('did jssor fire?');
+    //     let options = { $AutoPlay: true };
+    //     let jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    // }); 
+
+    $(document).on('click', "#nav-main a", function($){
+       
+
+        console.log('did jssor click event fire?');
+
+        $("#slider1_container").remove();
+
+        let options = { $AutoPlay: true };
+        let jssor_slider1 = new $JssorSlider$('slider1_container', options);           
+    });    
+    // console.log('Jssssoororrro');
+    //   let options = { $AutoPlay: true };
+    //   let jssor_slider1 = new $JssorSlider$('slider1_container', options);
+  },  
 
   setView(selector, template) {
     let $selector = this.tojquery(selector);
