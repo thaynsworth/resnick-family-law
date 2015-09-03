@@ -7,6 +7,7 @@
     lawView           : null,
     testimonialsView  : null,
     newsView          : null,
+    seminarView       : null,
     contactView       : null,
 
     routes: {
@@ -15,6 +16,7 @@
       'law'           : 'law',
       'testimonials'  : 'testimonials',
       'news'          : 'news',
+      'seminar'       : 'seminar',
       'contact'       : 'contact'   
     },
 
@@ -75,7 +77,18 @@
 
       this.wrapper.child = this.newsView;
       this.wrapper.render();
-    },     
+    }, 
+
+    seminar() {
+      this.changeState('seminar');
+
+      if (this.seminarView === null) {
+        this.seminarView = new RESNICK.SeminarView();
+      }
+
+      this.wrapper.child = this.seminarView;
+      this.wrapper.render();
+    },         
 
     contact() {
       this.changeState('contact');

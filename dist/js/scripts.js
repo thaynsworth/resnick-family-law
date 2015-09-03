@@ -237,6 +237,26 @@ RESNICK.NewsView = Backbone.View.extend({
   }
 
 });
+RESNICK.SeminarView = Backbone.View.extend({
+
+  el: '.seminar',
+
+  viewContainer: _.template($('#seminar-container-template').html()),
+
+  initialize: function initialize() {
+    this.render();
+  },
+
+  render: function render() {
+    var selector = this.$el,
+        template = this.viewContainer;
+
+    this.setView(selector, template);
+
+    return this;
+  }
+
+});
 
 RESNICK.Router = Backbone.Router.extend({
 
@@ -246,6 +266,7 @@ RESNICK.Router = Backbone.Router.extend({
   lawView: null,
   testimonialsView: null,
   newsView: null,
+  seminarView: null,
   contactView: null,
 
   routes: {
@@ -254,6 +275,7 @@ RESNICK.Router = Backbone.Router.extend({
     'law': 'law',
     'testimonials': 'testimonials',
     'news': 'news',
+    'seminar': 'seminar',
     'contact': 'contact'
   },
 
@@ -313,6 +335,17 @@ RESNICK.Router = Backbone.Router.extend({
     }
 
     this.wrapper.child = this.newsView;
+    this.wrapper.render();
+  },
+
+  seminar: function seminar() {
+    this.changeState('seminar');
+
+    if (this.seminarView === null) {
+      this.seminarView = new RESNICK.SeminarView();
+    }
+
+    this.wrapper.child = this.seminarView;
     this.wrapper.render();
   },
 
