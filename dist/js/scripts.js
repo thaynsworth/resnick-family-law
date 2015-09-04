@@ -41,10 +41,9 @@ var RESNICK = {
 
       console.log('did jssor click event fire?');
 
-      // $("#slider1_container").remove();
-
       var options = { $AutoPlay: true };
       var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+      console.log('It WORKED');
     });
     // console.log('Jssssoororrro');
     //   let options = { $AutoPlay: true };
@@ -314,6 +313,9 @@ RESNICK.Router = Backbone.Router.extend({
 
     this.wrapper.child = this.indexView;
     this.wrapper.render();
+    console.log('about to FIRE');
+    this.sliderFire($);
+    console.log('FIRREED');
   },
 
   about: function about() {

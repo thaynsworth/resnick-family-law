@@ -35,6 +35,9 @@
 
     	this.wrapper.child = this.indexView;
     	this.wrapper.render();
+      console.log('about to FIRE');
+      this.sliderFire($);
+      console.log('FIRREED');
     }, 
 
     about() {
