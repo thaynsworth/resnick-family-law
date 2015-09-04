@@ -44,31 +44,38 @@
 	}
 
 	.home-icons {
-		background-color: @off-white;
-		padding: 60px 10% 60px 10%;
+		background-color: @dark-grey;
+		padding: 120px 10% 120px 10%;
 		// margin-bottom: 30px;
 		.border-radius();
-		color: @dark-grey;
+		color: white;
+		opacity: 0.8;
 
 		a {
-
-			color: @blue-header;
+			color: white;
 
 			ul {
 				list-style-type: none;
-				color: @blue-header;
-				border: 3px solid @dark-grey;
-				padding: 5px 0 5px 0;
+				// color: @blue-header;
+				border: 4px solid white;
+				.border-radius();
+				padding: 20px 0 20px 0;
+				margin-top: 5px;
+
+				&:hover {
+					border: 4px solid @blue-header;
+					background-color: @blue-header;
+				}
 
 				li {
 					font-size: 30px;
-					color: @blue-header;
+					color: white;
 
 					img {
 						height: 40%;
 						width: 40%;
 						padding-bottom: 10px;
-						color: @blue-header;
+					
 					}
 				}
 			}
@@ -77,12 +84,11 @@
 	}
 
 	.home-testimonial {
-		background-color: @dark-grey;
+		background-color: @off-white;
 		padding: 100px 10% 100px 10%;
 		// margin-bottom: 30px;
 		.border-radius();
-		color: @off-white;
-		opacity: 0.8;
+		color: @dark-grey;
 
 		p {
 			font-size: 24px;
