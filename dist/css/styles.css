@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #d1d1d1;
+  background-color: #fdfffc;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 a:focus,
@@ -26,9 +26,8 @@ a:visited {
 }
 .th-wrapper {
   background-color: #d1d1d1;
-  padding: 50px 40px 60px 40px;
-  margin-top: 20px;
   height: 100%;
+  width: 100%;
 }
 .header-main {
   background-color: #336699;
@@ -350,34 +349,37 @@ nav#nav-mobile a:hover {
   color: #FFFFFF;
 }
 #about .about-header {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 2px solid #383d3b;
+  background-color: #d1d1d1;
+  border-bottom: 10px solid #383d3b;
 }
 #about .about-header img {
   height: 50%;
   width: 50%;
 }
 #about .about-header .about-summary {
+  padding-top: 40px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding-top: 20px;
 }
 #about .about-header .about-summary h2 {
-  padding-bottom: 5px;
-  border-bottom: 1px solid black;
+  padding: 20px 0px 20px 10px;
   font-size: 40px;
+  margin-bottom: 25px;
+  background-color: #fdfffc;
   color: #336699;
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 #about .about-header .about-summary p {
-  font-size: 18px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-left: 3px solid #383d3b;
 }
-#about .professional-info {
+#about .profile-info {
   background-color: #fdfffc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  width: 100%;
 }
 #about img {
   height: 70%;
