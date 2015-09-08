@@ -5,11 +5,7 @@
 /* Implementation */
 /* Mixin */
 /* Implementation */
-#somediv {
-  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-}
+/* Implementation */
 html,
 body {
   margin: 0;
@@ -348,9 +344,14 @@ nav#nav-mobile a:hover {
   font-size: 30px;
   color: #FFFFFF;
 }
+#about {
+  padding: 0 0 0 0;
+}
 #about .about-header {
   background-color: #d1d1d1;
-  border-bottom: 10px solid #383d3b;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 9px solid #383d3b;
 }
 #about .about-header img {
   height: 50%;
@@ -378,12 +379,42 @@ nav#nav-mobile a:hover {
   border-left: 3px solid #383d3b;
 }
 #about .profile-info {
-  background-color: #fdfffc;
-  width: 100%;
+  height: 100%;
 }
-#about img {
-  height: 70%;
-  width: 70%;
+#about .profile-info .professional-exper {
+  padding: 60px;
+  border-right: 6px solid #383d3b;
+  height: 100%;
+}
+#about .profile-info .professional-exper h4 {
+  font-size: 35px;
+  text-align: center;
+  border-bottom: 2px solid #383d3b;
+  padding-bottom: 5px;
+}
+#about .profile-info .professional-exper ul {
+  list-style-type: none;
+}
+#about .profile-info .professional-exper ul li {
+  font-size: 18px;
+  padding-top: 15px;
+}
+#about .profile-info .professional-exper ul li span {
+  padding-right: 10px;
+}
+#about .profile-info .education {
+  padding: 60px;
+  height: 100%;
+}
+#about .profile-info .education h4 {
+  font-size: 35px;
+  text-align: center;
+  border-bottom: 2px solid #383d3b;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+#about .profile-info .education h5 {
+  font-size: 20px;
 }
 #th-wrapper {
   min-height: 100%;
