@@ -98,6 +98,7 @@ var RESNICK = {
   changeState: function changeState(string) {
     this.navActive(string);
     this.createElement(string);
+    window.scrollTo(0, 0);
   }
 
 };

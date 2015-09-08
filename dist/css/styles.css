@@ -107,7 +107,6 @@ nav#nav-main {
 nav#nav-main .nav-active a {
   background-color: #383d3b;
   color: #fdfffc;
-  border: 2px solid #db7f67;
 }
 nav#nav-main ul {
   list-style-type: none;
@@ -356,6 +355,7 @@ nav#nav-mobile a:hover {
   background-image: linear-gradient(left, black, #5d5e5d);
   padding-bottom: 40px;
   padding-top: 40px;
+  border-bottom: 20px solid #FF715B;
 }
 #about .about-header img {
   height: 50%;
@@ -384,7 +384,6 @@ nav#nav-mobile a:hover {
 }
 #about .profile-info .professional-exper {
   padding: 60px;
-  border-right: 4px solid #383d3b;
   height: 100%;
 }
 #about .profile-info .professional-exper h4 {
@@ -404,22 +403,25 @@ nav#nav-mobile a:hover {
   padding-right: 10px;
 }
 #about .profile-info .education {
-  padding: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 100%;
+  background-color: #d1d1d1;
+  border: 2px solid #383d3b;
 }
 #about .profile-info .education h4 {
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   border-bottom: 2px solid #383d3b;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
 #about .profile-info .education h5 {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: underline;
 }
 #about .profile-info .education ul li {
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 6px;
 }
 #about .profile-info .education ul li span {
@@ -670,22 +672,26 @@ nav#nav-mobile a:hover {
   font-size: 17px;
 }
 #law {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 #law .law-header {
-  background-color: #f5fdc6;
-  margin-bottom: 40px;
+  background-color: black;
+  background-image: -webkit-linear-gradient(left, black, #5d5e5d);
+  background-image: -moz-linear-gradient(left, black, #5d5e5d);
+  background-image: -o-linear-gradient(left, black, #5d5e5d);
+  background-image: -ms-linear-gradient(left, black, #5d5e5d);
+  background-image: linear-gradient(left, black, #5d5e5d);
+  margin-bottom: 50px;
   text-align: center;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  border: 1px solid black;
+  border-bottom: 10px solid #FF715B;
+  color: #fdfffc;
 }
 #law .law-header h2 {
-  border-bottom: 2px solid black;
+  padding: 30px auto 30px auto;
   font-size: 40px;
 }
 #law .law-header p {
@@ -696,7 +702,8 @@ nav#nav-mobile a:hover {
   padding: 20px 0px 20px 0px;
 }
 #law .law-areas li {
-  font-size: 20px;
+  font-size: 22px;
+  padding-top: 5px;
 }
 #contact {
   margin-top: 40px;
