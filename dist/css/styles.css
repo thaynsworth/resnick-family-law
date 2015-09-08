@@ -348,10 +348,14 @@ nav#nav-mobile a:hover {
   padding: 0 0 0 0;
 }
 #about .about-header {
-  background-color: #d1d1d1;
+  background-color: black;
+  background-image: -webkit-linear-gradient(left, black, #5d5e5d);
+  background-image: -moz-linear-gradient(left, black, #5d5e5d);
+  background-image: -o-linear-gradient(left, black, #5d5e5d);
+  background-image: -ms-linear-gradient(left, black, #5d5e5d);
+  background-image: linear-gradient(left, black, #5d5e5d);
   padding-bottom: 40px;
   padding-top: 40px;
-  border-bottom: 9px solid #383d3b;
 }
 #about .about-header img {
   height: 50%;
@@ -364,26 +368,23 @@ nav#nav-mobile a:hover {
   border-radius: 3px;
 }
 #about .about-header .about-summary h2 {
-  padding: 20px 0px 20px 10px;
-  font-size: 40px;
+  padding: 20px 0px 10px 10px;
+  font-size: 50px;
   margin-bottom: 25px;
-  background-color: #fdfffc;
-  color: #336699;
-  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  color: #fdfffc;
 }
 #about .about-header .about-summary p {
   padding-left: 20px;
   font-size: 20px;
-  border-left: 3px solid #383d3b;
+  border-left: 3px solid #fdfffc;
+  color: #fdfffc;
 }
 #about .profile-info {
   height: 100%;
 }
 #about .profile-info .professional-exper {
   padding: 60px;
-  border-right: 6px solid #383d3b;
+  border-right: 4px solid #383d3b;
   height: 100%;
 }
 #about .profile-info .professional-exper h4 {
@@ -414,7 +415,15 @@ nav#nav-mobile a:hover {
   margin-bottom: 20px;
 }
 #about .profile-info .education h5 {
-  font-size: 20px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+#about .profile-info .education ul li {
+  font-size: 18px;
+  padding-top: 6px;
+}
+#about .profile-info .education ul li span {
+  padding-right: 10px;
 }
 #th-wrapper {
   min-height: 100%;
