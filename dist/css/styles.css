@@ -14,14 +14,12 @@ body {
   background-color: #fdfffc;
   font-family: 'PT Sans Narrow', sans-serif;
 }
-a {
-  outline: 0;
-}
 a:focus,
 a:hover,
 a:active,
 a:visited {
   text-decoration: none;
+  outline: none;
 }
 .th-wrapper {
   background-color: #d1d1d1;
