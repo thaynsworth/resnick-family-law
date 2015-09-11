@@ -26,6 +26,28 @@ a:visited {
   height: 100%;
   width: 100%;
 }
+.page-header {
+  background-color: black;
+  background-image: -webkit-linear-gradient(left, black, #5d5e5d);
+  background-image: -moz-linear-gradient(left, black, #5d5e5d);
+  background-image: -o-linear-gradient(left, black, #5d5e5d);
+  background-image: -ms-linear-gradient(left, black, #5d5e5d);
+  background-image: linear-gradient(left, black, #5d5e5d);
+  margin-top: 0;
+  margin-bottom: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-bottom: 10px solid #F15025;
+  color: #fdfffc;
+}
+.page-header h2 {
+  padding: 50px 0 50px 10%;
+  font-size: 50px;
+}
+.page-header h2 span {
+  font-size: 75px;
+}
 .header-main {
   background-color: #336699;
   height: 100%;
@@ -616,26 +638,7 @@ nav#nav-mobile a:hover {
   border-radius: 3px;
 }
 #testimonials {
-  margin-top: 40px;
   margin-bottom: 40px;
-}
-#testimonials .testimonial-header {
-  background-color: #f5fdc6;
-  margin-bottom: 40px;
-  text-align: center;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  border: 1px solid black;
-}
-#testimonials .testimonial-header h2 {
-  border-bottom: 2px solid black;
-  font-size: 40px;
-}
-#testimonials .testimonial-header p {
-  font-size: 20px;
 }
 #testimonials .box2 {
   padding-top: 30px;
@@ -668,30 +671,6 @@ nav#nav-mobile a:hover {
 }
 #law {
   margin-bottom: 60px;
-}
-#law .law-header {
-  background-color: black;
-  background-image: -webkit-linear-gradient(left, black, #5d5e5d);
-  background-image: -moz-linear-gradient(left, black, #5d5e5d);
-  background-image: -o-linear-gradient(left, black, #5d5e5d);
-  background-image: -ms-linear-gradient(left, black, #5d5e5d);
-  background-image: linear-gradient(left, black, #5d5e5d);
-  margin-bottom: 40px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  border-bottom: 10px solid #FF715B;
-  color: #fdfffc;
-}
-#law .law-header h2 {
-  padding: 50px 0 50px 10%;
-  font-size: 50px;
-}
-#law .law-header h2 span {
-  font-size: 75px;
-}
-#law .law-header p {
-  font-size: 20px;
 }
 #law .law-areas {
   background-color: #fdfffc;
