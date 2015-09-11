@@ -38,11 +38,11 @@ a:visited {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  border-bottom: 10px solid #F15025;
+  border-bottom: 12px solid #ffd166;
   color: #fdfffc;
 }
 .page-header h2 {
-  padding: 40px 0 40px 10%;
+  padding: 0 0 0 11%;
   font-size: 50px;
 }
 .page-header h2 span {
@@ -365,7 +365,7 @@ nav#nav-mobile a:hover {
   background-image: linear-gradient(left, black, #5d5e5d);
   padding-bottom: 40px;
   padding-top: 40px;
-  border-bottom: 20px solid #FF715B;
+  border-bottom: 20px solid #ffd166;
 }
 #about .about-header img {
   height: 50%;
