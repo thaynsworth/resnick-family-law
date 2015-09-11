@@ -414,43 +414,18 @@
 
 <script>
 
-
-  // $(document).ready(function(){
-  //     $("#nav-mobile").html($("#nav-main").html());
-  //     $("#nav-trigger span").click(function(){
-  //         if ($("nav#nav-mobile ul").hasClass("expanded")) {
-  //             $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-  //             $(this).removeClass("open");
-  //         } else {
-  //             $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-  //             $(this).addClass("open");
-  //         }
-  //     });
-  //     $("#nav-mobile li").click(function(){
-  //         if ($("nav#nav-mobile ul").hasClass("expanded")) {
-  //             $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-  //             $(this).removeClass("open");
-  //         } else {
-  //             $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-  //             $(this).addClass("open");
-  //         }
-  //     });      
-  // });
-
-  // $(document).ready(function ($) {
-  //     var options = { $AutoPlay: true };
+  // jQuery(document).ready(function ($) {
+  //     var options = { 
+  //       $AutoPlay: false,
+  //       $AutoPlayInterval: 8000 
+  //     };
   //     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
   // });
 
-  jQuery(document).ready(function ($) {
-      var options = { $AutoPlay: true };
-      var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-  });
 
-  
-// $(document).on('ready', function() {
-//   RESNICK.listeners();
-// });
+$(document).on('ready', function() {
+  RESNICK.listeners();
+});
 
 </script>
 

@@ -27,6 +27,7 @@
     },
 
     index() {
+
     	this.changeState('index');
 
     	if (this.indexView === null) {
@@ -35,10 +36,9 @@
 
     	this.wrapper.child = this.indexView;
     	this.wrapper.render();
-      console.log('about to FIRE');
-      this.sliderFire($);
-      console.log('FIRREED');
-
+      // console.log('about to FIRE');
+      // this.sliderFire($);
+      // console.log('FIRREED');   
     }, 
 
     about() {
