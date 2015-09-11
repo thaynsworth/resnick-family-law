@@ -60,15 +60,17 @@ a:visited {
   padding: 2em;
 }
 .header-main .header-left {
-  text-align: center;
+  text-align: left;
 }
 .header-main .header-left img {
   height: 55%;
   width: 55%;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .header-main .header-left {
-    text-align: left;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
 }
 .header-main .header-right {
@@ -79,20 +81,20 @@ a:visited {
   margin-bottom: 15px;
 }
 .header-main .header-right a {
-  background-color: #d1d1d1;
-  border: 2px solid #c52233;
-  color: #c52233;
+  background-color: #fdfffc;
+  border: 2px solid #383d3b;
+  color: #383d3b;
   padding: 10px;
-  font-size: 25px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  font-size: 29px;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 .header-main .header-right a:hover {
-  background-color: #c52233;
-  border: 2px solid #c52233;
+  background-color: #383d3b;
+  border: 2px solid #383d3b;
   color: #fdfffc;
 }
 @media (max-width: 992px) {
