@@ -44,13 +44,30 @@
 	}
 
 	.header-right {
-		font-size: 1em;
-		text-align: center;
-		font-family: @ptsans;
+		text-align: right;
 
-		@media (min-width: @md) {
-			font-size: 1.5em;
-			text-align: right;
+		li:first-child {
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+
+		a {
+			background-color: @light-grey;
+			border: 2px solid @dark-red;
+			color: @dark-red;
+			padding: 10px;
+			font-size: 25px;
+			.transition(all, 0.2s, ease-in);
+
+			&:hover {
+				background-color: @dark-red;
+				border: 2px solid @dark-red;
+				color: @off-white;
+			}
+		}
+
+		@media (max-width: @md) {
+			text-align: center;
 		}
 	}
 

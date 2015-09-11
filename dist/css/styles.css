@@ -72,14 +72,32 @@ a:visited {
   }
 }
 .header-main .header-right {
-  font-size: 1em;
-  text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: right;
 }
-@media (min-width: 992px) {
+.header-main .header-right li:first-child {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.header-main .header-right a {
+  background-color: #d1d1d1;
+  border: 2px solid #c52233;
+  color: #c52233;
+  padding: 10px;
+  font-size: 25px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.header-main .header-right a:hover {
+  background-color: #c52233;
+  border: 2px solid #c52233;
+  color: #fdfffc;
+}
+@media (max-width: 992px) {
   .header-main .header-right {
-    font-size: 1.5em;
-    text-align: right;
+    text-align: center;
   }
 }
 /* =Nav
