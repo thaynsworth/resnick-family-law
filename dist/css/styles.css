@@ -660,34 +660,24 @@ nav#nav-mobile a:hover {
 #testimonials {
   margin-bottom: 40px;
 }
-#testimonials .box2 {
+#testimonials .box {
   padding-top: 30px;
   padding-bottom: 30px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-#testimonials .box2 p:first-child {
+#testimonials .box p:first-child {
+  font-weight: bold;
   font-style: italic;
-  font-size: 19px;
+  font-size: 21px;
 }
-#testimonials .box2 p:nth-child(2) {
-  font-size: 17px;
+#testimonials .box p:nth-child(2) {
+  font-size: 18px;
+  padding-left: 20px;
 }
-#testimonials .box1 {
+#testimonials .grey-box {
   background-color: #d1d1d1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-#testimonials .box1 p:first-child {
-  font-style: italic;
-  font-size: 19px;
-}
-#testimonials .box1 p:nth-child(2) {
-  font-size: 17px;
 }
 #law {
   margin-bottom: 60px;
