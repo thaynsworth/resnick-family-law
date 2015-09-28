@@ -668,12 +668,11 @@ nav#nav-mobile a:hover {
   border-radius: 3px;
 }
 #testimonials .box p:first-child {
-  font-weight: bold;
   font-style: italic;
-  font-size: 21px;
+  font-size: 22px;
 }
 #testimonials .box p:nth-child(2) {
-  font-size: 18px;
+  font-size: 19px;
   padding-left: 20px;
 }
 #testimonials .grey-box {
@@ -692,4 +691,18 @@ nav#nav-mobile a:hover {
 }
 #contact {
   margin-bottom: 50px;
+}
+#resources .resource-icons {
+  margin-bottom: 40px;
+}
+#resources .resource-icons img {
+  width: 50%;
+  height: 50%;
+}
+#resources .resource-icons-last {
+  margin-bottom: 40px;
+}
+#resources .resource-icons-last img {
+  width: 20%;
+  height: 20%;
 }
