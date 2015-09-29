@@ -429,19 +429,18 @@ nav#nav-mobile a:hover {
   background-image: -o-linear-gradient(left, black, #5d5e5d);
   background-image: -ms-linear-gradient(left, black, #5d5e5d);
   background-image: linear-gradient(left, black, #5d5e5d);
-  padding-bottom: 40px;
-  padding-top: 40px;
   border-bottom: 20px solid #ffd166;
 }
 #about .about-header img {
-  height: 50%;
-  width: 50%;
+  height: 110%;
+  width: 110%;
 }
 #about .about-header .about-summary {
   padding-top: 1%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  padding-left: 100px;
 }
 #about .about-header .about-summary h2 {
   font-size: 50px;
