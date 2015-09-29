@@ -599,7 +599,7 @@ nav#nav-mobile a:hover {
   color: #fdfffc;
 }
 #home .home-testimonial div:nth-child(2) {
-  padding-top: 4%;
+  padding-top: 3%;
 }
 #home .home-cases {
   background-color: #d1d1d1;
@@ -701,8 +701,9 @@ nav#nav-mobile a:hover {
   margin-bottom: 20px;
 }
 #resources .resource-icons .ziegler img {
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 5px;
+  background-color: white;
 }
 #resources .resource-icons-last {
   margin-bottom: 40px;
