@@ -69,8 +69,10 @@ a:visited {
 @media (max-width: 992px) {
   .header-main .header-left {
     text-align: center;
-    height: 100%;
-    width: 100%;
+  }
+  .header-main .header-left img {
+    height: 90%;
+    width: 90%;
   }
 }
 .header-main .header-right {
@@ -632,7 +634,8 @@ nav#nav-mobile a:hover {
   background-color: #fdfffc;
   color: #ef476f;
   padding: 20px;
-  margin-left: 33%;
+  width: 50%;
+  margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
   -webkit-transition: all 0.2s ease-in;
