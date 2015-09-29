@@ -375,6 +375,11 @@ nav#nav-mobile a:hover {
   line-height: 36px;
   font-size: 40px;
   color: #FFFFFF;
+  text-shadow: 2px 2px #383d3b;
+}
+.slider1_container .slides_container .footer_content p:first-child {
+  font-style: italic;
+  margin-bottom: 20px;
 }
 .slider1_container .slides_container .footer_content span {
   font-size: 30px;
