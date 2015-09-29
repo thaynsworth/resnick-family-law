@@ -698,6 +698,11 @@ nav#nav-mobile a:hover {
 #resources .resource-icons img {
   width: 50%;
   height: 50%;
+  margin-bottom: 20px;
+}
+#resources .resource-icons .ziegler img {
+  border: 2px solid black;
+  padding: 5px;
 }
 #resources .resource-icons-last {
   margin-bottom: 40px;
