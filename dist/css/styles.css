@@ -706,3 +706,18 @@ nav#nav-mobile a:hover {
   width: 20%;
   height: 20%;
 }
+#seminar .case {
+  padding: 0 0 60px 0;
+}
+#seminar .case h1 {
+  font-size: 37px;
+}
+#seminar .case .case-info {
+  border-left: 3px solid #383d3b;
+}
+#seminar .case .case-info h4 {
+  font-size: 23px;
+}
+#seminar .case .case-info a {
+  font-size: 22px;
+}
