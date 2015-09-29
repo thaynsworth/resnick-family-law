@@ -722,3 +722,13 @@ nav#nav-mobile a:hover {
 #seminar .case .case-info a {
   font-size: 22px;
 }
+#news h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+#news p {
+  font-size: 21px;
+}
