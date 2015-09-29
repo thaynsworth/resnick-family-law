@@ -364,6 +364,29 @@ nav#nav-mobile a:hover {
   font-size: 40px;
   color: #FFFFFF;
 }
+.slider1_container .slides_container .header_content a {
+  border: 5px solid #fdfffc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fdfffc;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
+}
+.slider1_container .slides_container .header_content a:hover {
+  background-color: #fdfffc;
+  color: #383d3b;
+}
 .slider1_container .slides_container .footer_content {
   position: absolute;
   width: 600px;
@@ -375,7 +398,7 @@ nav#nav-mobile a:hover {
   line-height: 36px;
   font-size: 40px;
   color: #FFFFFF;
-  text-shadow: 2px 2px #383d3b;
+  text-shadow: 1px 1px #383d3b;
 }
 .slider1_container .slides_container .footer_content p:first-child {
   font-style: italic;

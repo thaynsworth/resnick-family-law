@@ -125,6 +125,24 @@
             font-size: 40px;
             color: #FFFFFF;
 
+            a {  
+                border: 5px solid @off-white;
+                .border-radius();
+                color: @off-white;
+                padding: 20px;
+                // width: 100%;
+                margin: 0 auto;
+                font-size: 40px;
+                font-weight: bold;
+                .transition(all, 0.2s, ease-in);
+                .box-shadow(5px, 5px, 6px, 0.7);
+            }
+
+            a:hover {
+                background-color: @off-white;
+                color: @dark-grey;
+            }
+
         }
 
         .footer_content {
@@ -138,7 +156,7 @@
             line-height: 36px; 
             font-size: 40px;
             color: #FFFFFF;
-            text-shadow: 2px 2px @dark-grey;
+            text-shadow: 1px 1px @dark-grey;
 
             p:first-child {
                 font-style: italic;
