@@ -379,9 +379,6 @@ nav#nav-mobile a:hover {
   -o-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
 }
 .slider1_container .slides_container .header_content a:hover {
   background-color: #fdfffc;
@@ -411,12 +408,12 @@ nav#nav-mobile a:hover {
 .slider-sunset {
   margin-left: 300px;
   margin-top: 20px;
-  font-size: 45px;
+  font-size: 50px;
   border-left: 5px solid white;
   padding-left: 9px;
 }
 .slider-sunset span {
-  font-size: 40px;
+  font-size: 38px;
 }
 .slider-sunset ul li {
   font-size: 300px;
@@ -745,6 +742,10 @@ nav#nav-mobile a:hover {
 }
 #contact {
   margin-bottom: 50px;
+}
+#contact img {
+  height: 50%;
+  width: 50%;
 }
 #resources .resource-icons {
   margin-bottom: 40px;
