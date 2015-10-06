@@ -51,14 +51,11 @@ a:visited {
 }
 .header-main {
   background-color: #336699;
-  height: 100%;
+  min-height: 100%;
   color: white;
 }
 .header-main ul {
   list-style-type: none;
-}
-.header-main .row {
-  padding: 2em;
 }
 .header-main .header-left {
   text-align: left;
@@ -77,28 +74,22 @@ a:visited {
   }
 }
 .header-main .header-right {
-  text-align: right;
+  border-left: 10px solid #db7f67;
+  border-right: 10px solid #db7f67;
+  background-color: #336699;
+  min-height: 140px;
+  padding-top: 30px;
 }
 .header-main .header-right li:first-child {
   font-size: 30px;
-  margin-bottom: 15px;
+  color: #fdfffc;
 }
 .header-main .header-right a {
-  background-color: #fdfffc;
-  border: 2px solid #383d3b;
-  color: #383d3b;
-  padding: 10px;
-  font-size: 29px;
-  -webkit-transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
-  -ms-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
+  color: #fdfffc;
+  font-size: 30px;
 }
 .header-main .header-right a:hover {
-  background-color: #383d3b;
-  border: 2px solid #383d3b;
-  color: #fdfffc;
+  color: #383d3b;
 }
 @media (max-width: 992px) {
   .header-main .header-right {
@@ -369,8 +360,10 @@ nav#nav-mobile a:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  color: #fdfffc;
+  color: #383d3b;
   padding: 20px;
+  opacity: 0.8;
+  background-color: #d1d1d1;
   margin: 0 auto;
   font-size: 40px;
   font-weight: bold;
@@ -745,6 +738,24 @@ nav#nav-mobile a:hover {
 #contact {
   margin-bottom: 50px;
 }
+#contact h3 {
+  font-size: 55px;
+}
+#contact h5 {
+  font-size: 30px;
+}
+#contact h4 {
+  font-size: 40px;
+  border-bottom: 3px solid black;
+  margin-bottom: 30px;
+}
+#contact .contact-content ul {
+  margin-bottom: 40px;
+}
+#contact .contact-content ul li {
+  list-style-type: none;
+  font-size: 24px;
+}
 #contact img {
   height: 50%;
   width: 50%;
@@ -753,8 +764,8 @@ nav#nav-mobile a:hover {
   margin-bottom: 40px;
 }
 #resources .resource-icons img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   margin-bottom: 20px;
 }
 #resources .resource-icons .ziegler img {
@@ -762,12 +773,9 @@ nav#nav-mobile a:hover {
   padding: 5px;
   background-color: white;
 }
-#resources .resource-icons-last {
-  margin-bottom: 40px;
-}
 #resources .resource-icons-last img {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
 }
 #seminar .case {
   padding: 0 0 60px 0;
@@ -794,4 +802,5 @@ nav#nav-mobile a:hover {
 }
 #news p {
   font-size: 21px;
+  margin-bottom: 80px;
 }
