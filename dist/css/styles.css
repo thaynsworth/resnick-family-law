@@ -361,8 +361,8 @@ nav#nav-mobile a:hover {
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #383d3b;
-  padding: 20px;
-  opacity: 0.8;
+  padding: 15px 30% 15px 30%;
+  opacity: 0.9;
   background-color: #d1d1d1;
   margin: 0 auto;
   font-size: 40px;
@@ -389,6 +389,9 @@ nav#nav-mobile a:hover {
   font-size: 40px;
   color: #FFFFFF;
   text-shadow: 1px 1px #383d3b;
+}
+.slider1_container .slides_container .footer_content p {
+  letter-spacing: 0.8px;
 }
 .slider1_container .slides_container .footer_content p:first-child {
   font-style: italic;
