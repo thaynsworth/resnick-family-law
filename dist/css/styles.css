@@ -734,8 +734,20 @@ nav#nav-mobile a:hover {
   background-color: #fdfffc;
   padding: 20px 0px 20px 0px;
 }
-#law .law-areas li {
-  font-size: 22px;
+#law .law-areas img {
+  height: 80%;
+  width: 80%;
+  border: 2px solid black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#law .law-areas ul {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+#law .law-areas ul li {
+  font-size: 25px;
   padding-top: 5px;
 }
 #contact {
