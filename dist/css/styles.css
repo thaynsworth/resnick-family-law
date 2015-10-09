@@ -820,14 +820,37 @@ nav#nav-mobile a:hover {
 #seminar .case .case-info a {
   font-size: 22px;
 }
+#news .row {
+  margin-bottom: 45px;
+}
 #news h3 {
-  font-size: 35px;
+  font-size: 33px;
   text-transform: uppercase;
-  border-bottom: 3px solid black;
-  margin-bottom: 20px;
+  border-bottom: 1px solid black;
   padding-bottom: 5px;
+  font-weight: bold;
+}
+#news ul {
+  border-bottom: 1px solid black;
+  padding: 5px 0 5px 0;
+}
+#news ul li {
+  list-style-type: none;
+  display: inline;
+}
+#news ul li:first-child {
+  border-right: 1px solid black;
+  font-size: 25px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#news ul li:nth-child(2) {
+  padding-left: 10px;
+  font-size: 15px;
 }
 #news p {
   font-size: 21px;
-  margin-bottom: 80px;
+}
+#news a {
+  font-size: 16px;
 }
