@@ -512,8 +512,13 @@ nav#nav-mobile a:hover {
   position: relative;
 }
 #main-container {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   /* Height of the footer element */
+}
+@media (max-width: 992px) {
+  #main-container {
+    padding-bottom: 140px;
+  }
 }
 .footer-main {
   background-color: #383d3b;
@@ -522,7 +527,6 @@ nav#nav-mobile a:hover {
   bottom: 0;
   left: 0;
   vertical-align: center;
-  font-size: 17px;
 }
 .footer-main ul {
   padding-top: 35px;
@@ -530,6 +534,14 @@ nav#nav-mobile a:hover {
 .footer-main li {
   color: white;
   display: inline-block;
+  font-size: 17px;
+}
+.footer-main a {
+  color: #e8c547;
+  font-size: 19px;
+}
+.footer-main a:hover {
+  color: #fdfffc;
 }
 .footer-main span {
   padding: 0 10px 0 10px;
