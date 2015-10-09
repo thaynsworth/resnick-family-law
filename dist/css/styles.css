@@ -73,23 +73,29 @@ a:visited {
     width: 90%;
   }
 }
-.header-main .header-right {
-  border-left: 10px solid #db7f67;
-  border-right: 10px solid #db7f67;
-  background-color: #336699;
-  min-height: 140px;
-  padding-top: 30px;
-}
-.header-main .header-right li:first-child {
-  font-size: 30px;
-  color: #fdfffc;
-}
-.header-main .header-right a {
-  color: #fdfffc;
-  font-size: 30px;
-}
-.header-main .header-right a:hover {
+.header-main .header-right h4 {
+  background-color: #f5fdc6;
   color: #383d3b;
+  font-size: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 0;
+  border-top: 2px solid #383d3b;
+  border-right: 2px solid #383d3b;
+  border-left: 2px solid #383d3b;
+  border-bottom: 2px solid #383d3b;
+}
+.header-main .header-right h5 {
+  background-color: #fdfffc;
+  color: #383d3b;
+  margin-top: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #383d3b;
+  border-right: 2px solid #383d3b;
+  border-left: 2px solid #383d3b;
+  font-size: 25px;
+  font-weight: bold;
 }
 @media (max-width: 992px) {
   .header-main .header-right {
@@ -415,9 +421,6 @@ nav#nav-mobile a:hover {
 .slider-sunset ul li {
   font-size: 300px;
 }
-#about {
-  padding: 0 0 0 0;
-}
 #about .about-header {
   background-color: black;
   background-image: -webkit-linear-gradient(left, black, #5d5e5d);
@@ -425,18 +428,18 @@ nav#nav-mobile a:hover {
   background-image: -o-linear-gradient(left, black, #5d5e5d);
   background-image: -ms-linear-gradient(left, black, #5d5e5d);
   background-image: linear-gradient(left, black, #5d5e5d);
+  margin-bottom: 40px;
   border-bottom: 20px solid #ffd166;
+  padding-left: 0;
 }
 #about .about-header img {
-  height: 110%;
-  width: 110%;
+  height: 100%;
+  width: 100%;
 }
 #about .about-header .about-summary {
-  padding-top: 1%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding-left: 100px;
 }
 #about .about-header .about-summary h2 {
   font-size: 50px;
@@ -461,7 +464,6 @@ nav#nav-mobile a:hover {
   height: 100%;
 }
 #about .profile-info .professional-exper {
-  padding: 60px;
   height: 100%;
 }
 #about .profile-info .professional-exper h4 {
@@ -510,19 +512,17 @@ nav#nav-mobile a:hover {
   position: relative;
 }
 #main-container {
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   /* Height of the footer element */
 }
 .footer-main {
   background-color: #383d3b;
   width: 100%;
-  min-height: 90px;
   position: absolute;
   bottom: 0;
   left: 0;
   vertical-align: center;
   font-size: 17px;
-  margin-top: 300px;
 }
 .footer-main ul {
   padding-top: 35px;
@@ -737,7 +737,7 @@ nav#nav-mobile a:hover {
 #law .law-areas img {
   height: 80%;
   width: 80%;
-  border: 2px solid black;
+  border: 1px solid black;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
