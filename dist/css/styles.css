@@ -663,7 +663,6 @@ nav#nav-mobile a:hover {
 }
 #home .home-cases .case-sample {
   padding: 10px 20px 40px 20px;
-  margin-bottom: 40px;
   color: #383d3b;
 }
 #home .home-cases .case-sample h3 {
@@ -809,8 +808,8 @@ nav#nav-mobile a:hover {
 #seminar .case .case-info a {
   font-size: 22px;
 }
-#news .row {
-  margin-bottom: 45px;
+#news .row:nth-child(n+2) {
+  margin-bottom: 50px;
 }
 #news h3 {
   font-size: 33px;
