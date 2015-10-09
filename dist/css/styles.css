@@ -527,6 +527,7 @@ nav#nav-mobile a:hover {
   bottom: 0;
   left: 0;
   vertical-align: center;
+  padding-bottom: 10px;
 }
 .footer-main ul {
   padding-top: 35px;
