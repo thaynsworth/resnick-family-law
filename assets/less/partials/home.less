@@ -1,13 +1,12 @@
 
 
 #home {
-	// padding: 30px 0 30px 0;
-	// margin-bottom: 40px;
-
-	// background-color: @off-white;
-	// padding: 60px 40px 60px 40px;
-	// height: 100%;
-
+	background-image: url("../../assets/img/resnick-courthouse.jpg"); 
+	width: 100%;
+	height: 100%;
+	// z-index: 99;
+	background-attachment: fixed;
+	background-position: center;
 
 	img {
 		height: 200px;
@@ -39,15 +38,6 @@
 			font-size: 22px;
 		}
 	}
-
-	.icon-background {
-		background-image: url("../../assets/img/resnick-courthouse.jpg"); 
-		width: 100%;
-		height: 100%;
-		// z-index: 99;
-		background-attachment: fixed;
-		background-position:center;	
-
 
 		.home-icons {	
 			background-color: @dark-grey;
@@ -90,8 +80,6 @@
 			}
 		}
 
-	}
-
 	.home-testimonial {
 		background-color: @off-white;
 		padding: 100px 10% 100px 10%;
@@ -131,25 +119,22 @@
 	}
 
 	.home-cases {
-		background-image: url("../../assets/img/court-room_xl.jpg"); 
-		width: 100%;
-		height: 100%;
-		// z-index: 99;
-		// background-attachment: fixed;
-		background-position:center;	
-		padding: 40px 10% 60px 10%;
+		background-color: @light-grey;
+		padding: 40px 0 60px 0;
 
 		.case-sample {
-
-			background-color: @off-white;
+			// border: 2px solid @off-white;
+			// background-color: @dark-grey;
+			// opacity: 0.8;
 			padding: 10px 20px 40px 20px; 
 			margin-bottom: 40px;
+			color: @dark-grey;
 
 			h3 {
 				padding-bottom: 10px;
 				margin-bottom: 30px;
 				font-size: 36px;
-				border-bottom: 3px solid black;
+				border-bottom: 3px solid @dark-grey;
 				text-transform: uppercase;
 				font-weight: bold;
 			}
@@ -163,41 +148,30 @@
 			}
 		}
 
-		a {
-			
-			border: 3px solid @light-red;
+		a {	
+			border: 3px solid @dark-grey;
 			.border-radius();
 			background-color: @off-white;
-			color: @light-red;
+			color: @dark-grey;
 			padding: 20px;
 			width: 50%;
-    	margin: 0 auto;
+    	// margin: 0 auto;
+    	// margin:
 			font-size: 30px;
 			font-weight: bold;
 			.transition(all, 0.2s, ease-in);
 		}
 
 		a:hover {
-			background-color: @light-red;
+			background-color: @dark-grey;
 			color: @off-white;
 		}			
 
 		img {
 			padding-top: 10px;
-			margin-top: 20px;
-			height: 50%;
-			width: 50%;
-		}
-
-		h2 {
-			padding: 30px;
-			margin-bottom: 60px;
-			font-size: 37px;
-			// text-decoration: underline;
-			background-color: @off-white;
-			text-align: center;
-			border: 2px solid @dark-grey;
-			.border-radius();
+			margin-top: 40px;
+			height: 80%;
+			width: 80%;
 		}
 
 		div:nth-child(2) {
@@ -206,6 +180,7 @@
 	}
 
 }
+
 
 
 
