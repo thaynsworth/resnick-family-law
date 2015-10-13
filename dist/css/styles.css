@@ -73,6 +73,10 @@ a:visited {
     width: 90%;
   }
 }
+.header-main .header-right {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header-main .header-right h4 {
   background-color: #f5fdc6;
   color: #383d3b;
@@ -659,7 +663,7 @@ nav#nav-mobile a:hover {
 }
 #home .home-cases {
   background-color: #d1d1d1;
-  padding: 40px 0 60px 0;
+  padding: 40px 0 90px 0;
 }
 #home .home-cases .case-sample {
   padding: 10px 20px 40px 20px;
@@ -774,6 +778,7 @@ nav#nav-mobile a:hover {
 #contact img {
   height: 50%;
   width: 50%;
+  padding: 30px;
 }
 #resources .resource-icons {
   margin-bottom: 40px;
