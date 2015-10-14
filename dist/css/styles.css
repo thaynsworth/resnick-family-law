@@ -710,6 +710,15 @@ nav#nav-mobile a:hover {
   height: 80%;
   width: 80%;
 }
+#home .home-announcement {
+  background-color: #f5fdc6;
+}
+#home .home-announcement img {
+  height: 60%;
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
 #testimonials {
   margin-bottom: 40px;
 }
