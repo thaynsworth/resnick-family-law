@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Resnick Family Law",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "nodemailer": "~0.7.1",
+    "express": "~4.5.1"   
+    },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.0",

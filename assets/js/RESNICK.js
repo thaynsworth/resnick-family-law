@@ -9,23 +9,28 @@ const RESNICK = {
 	},
 
   listeners() {
-    RESNICK.mobileNav();
+    // RESNICK.mobileNav();
     // RESNICK.sliderFire($);
     // RESNICK.sliderClicker();
   },
 
   mobileNav() {
     $(document).on('click', "#nav-trigger span", function(){   
+      console.log("neither");
       if ($("#nav-mobile ul").hasClass("expanded")) {
+        console.log("first if?");
         $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
         $(this).removeClass("open");
       } else {
+        console.log("second if?");
         $("#nav-mobile").html($("#nav-main").html());
         $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
         $(this).addClass("open");
       }
     });
+
     $(document).on('click', "#nav-mobile li", function(){
+      console.log("or this?");
       $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
       $(this).removeClass("open");      
     });    
