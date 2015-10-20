@@ -626,7 +626,17 @@
         <div class="col-xs-12 col-sm-5 col-md-5 text-center">
           <img src="assets/img/nj-map2.svg" alt="">
         </div>        
-      </div>      
+      </div>
+      <div class="row">      
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h1>Mailer In Node.JS</h1>
+          <input id="to" type="text" placeholder="Enter E-mail ID where you want to send" />
+          <input id="subject" type="text" placeholder="Write Subject" />
+          <textarea id="content" cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+          <button id="send_email">Send Email</button>
+          <span id="message"></span>
+        </div>
+      </div>            
     </div>
   </script>
 
@@ -664,6 +674,23 @@ $(document).on('ready', function() {
       $(this).removeClass("open");      
     }); 
 
+});
+
+$(document).ready(function(){
+    var from,to,subject,text;
+    $("#send_email").click(function(){      
+        to=$("#to").val();
+        subject=$("#subject").val();
+        text=$("#content").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("http://localhost:3000/send",{to:to,subject:subject,text:text},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html("Email is been sent at "+to+" . Please check inbox !");
+        }
+
+            });
+    });
 });
 
 </script>
