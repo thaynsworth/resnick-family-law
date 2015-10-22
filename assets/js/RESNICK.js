@@ -143,6 +143,7 @@ const RESNICK = {
 
 	createElement(string) {
     $("#main-container").empty();
+    
     let $selector = $(document.getElementsByClassName(string)),
         element = document.createElement('div');
 
