@@ -436,6 +436,9 @@ nav#nav-mobile a:hover {
   padding-left: 0;
 }
 #about .about-header img {
+  padding-left: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   height: 100%;
   width: 100%;
 }
@@ -740,7 +743,7 @@ nav#nav-mobile a:hover {
   background-color: #d1d1d1;
 }
 #law {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 #law .law-areas {
   background-color: #fdfffc;
@@ -755,7 +758,6 @@ nav#nav-mobile a:hover {
   border-radius: 3px;
 }
 #law .law-areas ul {
-  padding-top: 35px;
   padding-bottom: 35px;
 }
 #law .law-areas ul li {
