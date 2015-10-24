@@ -782,30 +782,48 @@ nav#nav-mobile a:hover {
   padding-top: 5px;
 }
 #contact {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 #contact h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#contact h3 span {
   font-size: 55px;
 }
 #contact h5 {
   font-size: 30px;
 }
 #contact h4 {
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: bold;
   border-bottom: 3px solid black;
   margin-bottom: 30px;
+  padding-bottom: 15px;
+  color: #a00826;
 }
 #contact .contact-content ul {
-  margin-bottom: 40px;
+  padding-top: 40px;
 }
 #contact .contact-content ul li {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 30px;
+}
+@media (max-width: 992px) {
+  #contact .contact-content {
+    text-align: center;
+  }
 }
 #contact img {
   height: 50%;
   width: 50%;
-  padding: 30px;
+  padding-top: 20px;
+}
+@media (max-width: 992px) {
+  #contact img {
+    height: 30%;
+    width: 30%;
+  }
 }
 #resources .resource-icons {
   margin-bottom: 80px;
