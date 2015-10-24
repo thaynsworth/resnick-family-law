@@ -516,9 +516,9 @@ nav#nav-mobile a:hover {
 #th-wrapper {
   min-height: 100%;
   position: relative;
+  padding-bottom: 160px;
 }
 #main-container {
-  padding-bottom: 70px;
   /* Height of the footer element */
 }
 @media (max-width: 992px) {
@@ -526,7 +526,7 @@ nav#nav-mobile a:hover {
     padding-bottom: 140px;
   }
 }
-.footer-main {
+#footer-main {
   background-color: #383d3b;
   width: 100%;
   position: absolute;
@@ -534,23 +534,39 @@ nav#nav-mobile a:hover {
   left: 0;
   vertical-align: center;
   padding-bottom: 10px;
-}
-.footer-main ul {
-  padding-top: 35px;
-}
-.footer-main li {
-  color: white;
-  display: inline-block;
-  font-size: 17px;
-}
-.footer-main a {
-  color: #e8c547;
-  font-size: 19px;
-}
-.footer-main a:hover {
+  padding-top: 20px;
   color: #fdfffc;
 }
-.footer-main span {
+@media (max-width: 992px) {
+  #footer-main .footer-left {
+    text-align: center;
+  }
+}
+#footer-main .footer-left ul {
+  list-style-type: none;
+}
+#footer-main .footer-left ul li:nth-child(2) {
+  color: #A00826;
+  font-size: 30px;
+}
+#footer-main .footer-left ul li {
+  font-size: 20px;
+}
+#footer-main .footer-right ul {
+  padding-top: 55px;
+}
+#footer-main .footer-right ul li {
+  display: inline-block;
+  font-size: 21px;
+}
+#footer-main .footer-right ul li a {
+  color: #e8c547;
+  font-size: 24px;
+}
+#footer-main .footer-right ul li a:hover {
+  color: #fdfffc;
+}
+#footer-main .footer-right ul span {
   padding: 0 10px 0 10px;
   color: white;
 }
@@ -718,8 +734,8 @@ nav#nav-mobile a:hover {
 #home .home-announcement img {
   height: 60%;
   width: 60%;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 40px;
 }
 #testimonials {
   margin-bottom: 40px;
@@ -832,6 +848,10 @@ nav#nav-mobile a:hover {
   border-bottom: 1px solid black;
   padding-bottom: 5px;
   font-weight: bold;
+}
+#news img {
+  height: 100%;
+  width: 100%;
 }
 #news ul {
   border-bottom: 1px solid black;
