@@ -684,8 +684,8 @@
     var sticky = $('.sticky'),
         scroll = $(window).scrollTop();
       
-    if (scroll >= stickyOffset) sticky.addClass('fixed');
-    else sticky.removeClass('fixed');
+    if (scroll >= stickyOffset) sticky.addClass('fixed', 4000);
+    else sticky.removeClass('fixed', 4000);
   });
 
 </script>

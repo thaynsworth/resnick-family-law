@@ -96,12 +96,13 @@ a:visited {
 -------------------------------------------------------------- */
 #nav-trigger {
   display: none;
-  text-align: right;
   height: 100%;
+  z-index: 999;
 }
 #nav-trigger span {
   display: inline-block;
   height: 100%;
+  width: 100%;
   padding: 15px 30px;
   background-color: #fdfffc;
   color: #383d3b;
@@ -116,6 +117,13 @@ a:visited {
   color: #fdfffc;
 }
 nav {
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
+  width: 100%;
+  opacity: 1;
   -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
@@ -124,11 +132,6 @@ nav#nav-main {
   background-color: #fdfffc;
   padding: 4px 0;
   z-index: 999;
-  -webkit-transition: all 0.3 ease;
-  -moz-transition: all 0.3 ease;
-  -o-transition: all 0.3 ease;
-  -ms-transition: all 0.3 ease;
-  transition: all 0.3s ease;
 }
 nav#nav-main .nav-active a {
   background-color: #383d3b;
@@ -203,10 +206,12 @@ nav#nav-mobile a:hover {
     color: #383d3b;
     padding: 5px 10px;
     font-size: 12px;
+    width: 100%;
   }
 }
 @media all and (max-width: 900px) {
   #nav-trigger {
+    text-align: center;
     display: block;
   }
   nav#nav-main {
