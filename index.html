@@ -35,32 +35,6 @@
     </div> 
   </div>
 
-<!--   <div class="et-container th-navbar">
-    <div class="et-wrapper">
-      <ul class="nav-items">
-        <li data-view="home" class="nav-item nav-home">
-          <p class="nav-text"><a class="nav-link" href="#">Home</a></p>
-        </li>
-        <span>|</span>        
-        <li data-view="about" class="nav-item nav-about">
-          <p class="nav-text"><a class="nav-link" href="#about">Steven M. Resnick</a></p>
-        </li>
-        <span>|</span>       
-        <li data-view="law" class="nav-item nav-law">
-          <p class="nav-text"><a class="nav-link" href="#law">Practice Areas</a></p>
-        </li>
-        <span>|</span>
-        <li data-view="testimonials" class="nav-item nav-testimonials">
-          <p class="nav-text"><a class="nav-link" href="#testimonials">Testimonials</a></p>
-        </li>
-        <span>|</span>
-        <li data-view="contact" class="nav-item nav-contact">
-          <p class="nav-text"><a class="nav-link" href="#contact">Contact</a></p>
-        </li>
-      </ul>
-    </div>
-  </div> -->
-
   <nav id="nav-main" class="sticky">
       <ul>
         <li data-view="index" class="nav-item nav-index">
@@ -673,56 +647,46 @@
 
 <script>
 
-  // jQuery(document).ready(function ($) {
-  //     var options = { 
-  //       $AutoPlay: false,
-  //       $AutoPlayInterval: 8000 
-  //     };
-  //     var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-  // });
+  $(document).on('ready', function() {
+    RESNICK.listeners();
 
+      $(document).on('click', "#nav-trigger span", function(){    
+        if ($("#nav-mobile ul").hasClass("expanded")) { 
+          $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+          $(this).removeClass("open");
+        } else {
+          $("#nav-mobile").html($("#nav-main").html());
+          $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+          $(this).addClass("open");
+        }
+      });
 
-$(document).on('ready', function() {
-  RESNICK.listeners();
-
-    $(document).on('click', "#nav-trigger span", function(){    
-      if ($("#nav-mobile ul").hasClass("expanded")) { 
+      $(document).on('click', "#nav-mobile li", function(){
         $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-        $(this).removeClass("open");
-      } else {
-        $("#nav-mobile").html($("#nav-main").html());
-        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-        $(this).addClass("open");
-      }
-    });
+        $(this).removeClass("open");      
+      }); 
 
-    $(document).on('click', "#nav-mobile li", function(){
-      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-      $(this).removeClass("open");      
-    }); 
+  });
 
-});
+  $(document).on('click', 'li.nav-item.nav-index', function(){
+    window.location.reload(true);
+  }) 
 
-$(document).on('click', 'li.nav-item.nav-index', function(){
-  window.location.reload(true);
-}) 
+  $(document).on('click', '.header-left a', function(){
+    console.log('reloadddding');
+    window.location.reload(true);
+    console.log('worked');
+  }) 
 
-$(document).on('click', '.header-left a', function(){
-  console.log('reloadddding');
-  window.location.reload(true);
-  console.log('worked');
-}) 
+  var stickyOffset = $('.sticky').offset().top;
 
-var stickyOffset = $('.sticky').offset().top;
-
-$(window).scroll(function(){
-  var sticky = $('.sticky'),
-      scroll = $(window).scrollTop();
-    
-  if (scroll >= stickyOffset) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
-
+  $(window).scroll(function(){
+    var sticky = $('.sticky'),
+        scroll = $(window).scrollTop();
+      
+    if (scroll >= stickyOffset) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
 
 </script>
 
