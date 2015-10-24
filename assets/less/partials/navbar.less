@@ -123,6 +123,8 @@ nav {
 nav#nav-main {
   background-color: @off-white;
   padding: 4px 0; 
+  z-index: 999;
+  .ease-all();
 
   .nav-active {
     a {
@@ -226,4 +228,10 @@ nav#nav-mobile {
 
   nav#nav-mobile {
     display: block; }
+}
+
+.fixed {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
 }

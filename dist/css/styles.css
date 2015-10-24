@@ -78,8 +78,8 @@ a:visited {
 }
 .header-main .header-right {
   font-size: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .header-main .header-right a {
   color: #a00826;
@@ -123,6 +123,12 @@ nav {
 nav#nav-main {
   background-color: #fdfffc;
   padding: 4px 0;
+  z-index: 999;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 nav#nav-main .nav-active a {
   background-color: #383d3b;
@@ -209,6 +215,12 @@ nav#nav-mobile a:hover {
   nav#nav-mobile {
     display: block;
   }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 /* jssor slider bullet navigator skin 21 css */
 /*

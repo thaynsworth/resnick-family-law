@@ -61,7 +61,7 @@
     </div>
   </div> -->
 
-  <nav id="nav-main">
+  <nav id="nav-main" class="sticky">
       <ul>
         <li data-view="index" class="nav-item nav-index">
           <p class="nav-text"><a class="nav-link" href="#">HOME</a></p>
@@ -712,6 +712,16 @@ $(document).on('click', '.header-left a', function(){
   window.location.reload(true);
   console.log('worked');
 }) 
+
+var stickyOffset = $('.sticky').offset().top;
+
+$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+    
+  if (scroll >= stickyOffset) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
 
 
 </script>
