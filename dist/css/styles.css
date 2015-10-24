@@ -570,6 +570,7 @@ nav#nav-mobile a:hover {
 #footer-main .footer-right ul span {
   padding: 0 10px 0 10px;
   color: white;
+  font-size: 25px;
 }
 #home {
   background-image: url("../../assets/img/resnick-courthouse.jpg");
