@@ -424,6 +424,9 @@ nav#nav-mobile a:hover {
   font-size: 45px;
   font-weight: normal;
 }
+#about {
+  padding-bottom: 70px;
+}
 #about .about-header {
   background-color: black;
   background-image: -webkit-linear-gradient(left, black, #5d5e5d);
@@ -431,21 +434,15 @@ nav#nav-mobile a:hover {
   background-image: -o-linear-gradient(left, black, #5d5e5d);
   background-image: -ms-linear-gradient(left, black, #5d5e5d);
   background-image: linear-gradient(left, black, #5d5e5d);
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom: 20px solid #ffd166;
-  padding-left: 0;
 }
 #about .about-header img {
-  padding-left: 0;
   padding-top: 5%;
   padding-bottom: 5%;
   height: 100%;
   width: 100%;
-}
-#about .about-header .about-summary {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 #about .about-header .about-summary h2 {
   font-size: 50px;
@@ -460,16 +457,15 @@ nav#nav-mobile a:hover {
   color: #fdfffc;
 }
 #about .about-header .about-summary p {
-  padding-left: 20px;
-  margin-top: 55px;
   font-size: 20px;
-  border-left: 3px solid #fdfffc;
   color: #fdfffc;
 }
 #about .profile-info {
   height: 100%;
 }
 #about .profile-info .professional-exper {
+  padding-top: 70px;
+  padding-bottom: 40px;
   height: 100%;
 }
 #about .profile-info .professional-exper h4 {
@@ -738,7 +734,7 @@ nav#nav-mobile a:hover {
   padding-top: 40px;
 }
 #testimonials {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 #testimonials .box {
   padding-top: 30px;
@@ -807,7 +803,7 @@ nav#nav-mobile a:hover {
   padding: 30px;
 }
 #resources .resource-icons {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 #resources .resource-icons img {
   width: 60%;
@@ -822,6 +818,9 @@ nav#nav-mobile a:hover {
 #resources .resource-icons-last img {
   width: 30%;
   height: 30%;
+}
+#seminar {
+  margin-bottom: 60px;
 }
 #seminar .case {
   padding: 0 0 60px 0;
@@ -850,8 +849,14 @@ nav#nav-mobile a:hover {
   font-weight: bold;
 }
 #news img {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
+}
+@media (max-width: 992px) {
+  #news img {
+    height: 100%;
+    width: 100%;
+  }
 }
 #news ul {
   border-bottom: 1px solid black;
