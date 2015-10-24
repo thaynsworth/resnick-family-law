@@ -604,6 +604,11 @@ nav#nav-mobile a:hover {
 #home .home-summary p {
   font-size: 22px;
 }
+@media (max-width: 992px) {
+  #home .home-summary h2 {
+    font-size: 45px;
+  }
+}
 #home .home-icons {
   background-color: #383d3b;
   padding: 120px 10% 120px 10%;
