@@ -399,7 +399,7 @@
     <div class="container-fluid" id="seminar">
       <div class="row">      
         <div class="col-xs-12 col-sm-12 col-md-12 page-header">
-          <h2><span>R</span>ecent <span>C</span>ases</h2>
+          <h2><span>C</span>ases</h2>
         </div>
       </div>
       <div class="row case">       
@@ -769,12 +769,12 @@
   });
 
   $(document).on('click', 'li.nav-item.nav-index', function(){
-    window.location.reload(true);
+    setTimeout(function(){location.reload(true);},1);
   }) 
 
   $(document).on('click', '.header-left a', function(){
     console.log('reloadddding');
-    window.location.reload(true);
+    setTimeout(function(){location.reload(true);},1);
     console.log('worked');
   }) 
 
