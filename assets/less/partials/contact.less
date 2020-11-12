@@ -26,32 +26,52 @@
 
 	.contact-content {
 
+		.contact-address {
+			padding-left: 90px;
+		}
+
+		@media (max-width: @md) {
+			text-align: center;
+
+			.contact-address {
+				padding-left: 0;
+			}
+		}
+
 		ul {
 			// margin-bottom: 40px;
+			padding-left: 0;
 			padding-top: 40px;
 			
 			li {
 				list-style-type: none;
-				font-size: 30px;
+				font-size: 22px;
 			}
 
 		}
 
-	  @media (max-width: @md) {
+		img {
+			max-width: 400px;
+		}
+
+		@media (max-width: @md) {
 			text-align: center;
-	  }			
+	  	}
 
 	}
 
-	img {
-		height: 50%;
-		width: 50%;
-		padding-top: 20px;
+	.nj-map {
 
-	  @media (max-width: @md) {
-			height: 30%;
-			width: 30%;
-	  }		
+		img {
+			height: 50%;
+			width: 50%;
+			padding-top: 50px;
+
+			@media (max-width: @md) {
+				height: 30%;
+				width: 30%;
+			}
+		}
 	}
 
 }

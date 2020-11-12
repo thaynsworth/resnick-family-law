@@ -19,32 +19,40 @@
   bottom:0;
   left:0;
   vertical-align: center;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   color: @off-white;
 
   .footer-left {
 
+    .footer-address {
+      padding-left: 66px;
+    }
+
     @media (max-width: @md) {
       text-align: center;
 
+      .footer-address {
+        padding-left: 0;
+      }
     }
     
     ul {
       list-style-type: none;
+      padding: 0;
 
       a {
-        color: @z-red;
         font-size: 30px;
         font-weight: bold;
 
-        span {
-          // color: lightgrey;
+
+        img {
+          max-width: 290px;
         }
       }
 
       li {
-        font-size: 20px;
+        font-size: 18px;
       }
     } 
 
